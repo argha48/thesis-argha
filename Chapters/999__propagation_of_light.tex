@@ -1,0 +1,107 @@
+\chapter{Propagation of Light}
+\label{ch:propagation_of_light}
+
+
+\section{Diffraction of Light}
+
+First concrete study of the deviation of light from its rectilinear propagation \cite{hechtoptics}, which is known as ``diffraction'', was reported by Francesco Grimaldi \cite{bornwolf} in the his book 1665. To understand digital holographic microscopy \cite{Lee:07} it is essential to understand the limitations imposed by diffraction.
+
+\subsection{Huygens - Fresnel Principle}
+According to Huygens principle every point on a wave front can be considered as a secondary source which creates a spherical wave front. Fresnel's postulation that such secondary wave fronts interfere with each other, in combination with Huygens' principle is known as the ``Huygens - Fresnel Principle''. From the Fig.\ref{fig:huygens_fresnel} , the electric field at point ``$\mathbf{P}$'' due to the secondary wave generated a small area $dS$ at point ``$\mathbf{Q}$'' can be written as:
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{huygens_fresnel_schematic}
+  \caption{Schematic to explain Huygens-Fresnel principle}
+  \label{fig:huygens_fresnel}
+\end{figure}
+
+
+\begin{equation}
+\label{eq:huygen_fresnel}
+dE(\vec{P}) = K(\chi) \frac{u_0 e^{i\vec{k}\vec{r_0}}}{r_0}\frac{e^{i\vec{k}\vec{l}}}{l} d\vec{S} \quad ,
+\end{equation}
+where $\vec{r_0}$ is the radius of the parent spherical wave front originated from point ``$\mathbf{O}$'' and $l$ is the distance between point ``$\mathbf{Q}$'' and ``$\mathbf{P}$''. $K(\chi)$ is the inclination factor which is maximum ($1$) when the propagation direction ``\textbf{OQ}'' aligns with ``\textbf{OP}''. Therefore the total field at ``\textbf{P}'' will be:
+\begin{equation}
+\label{eq:E_P}
+E(\vec{P}) =  \frac{u_0 e^{i\vec{k}\vec{r_0}}}{r_0} \int \int _{S} \frac{e^{i\vec{k}\vec{s}}}{s}  K(\chi) d\vec{S} \quad .
+\end{equation}
+
+Kirchoff \cite{kirchoff1883} showed that Huygens-Fresnel principle is an approximation of the now well known ``Fresnel-Kirchoff Diffraction Formula'':
+\begin{equation}
+\label{eq:fresnel_kirchoff}
+E(\vec{P}) = -\frac{iu_0}{2\lambda}\int \int _S \frac{e^{i\vec{k}(\vec{r}+\vec{s})}}{rs}\left[\cos (\vec{n},\vec{r}) - \cos (\vec{n},\vec{s})\right]d\vec{S} \quad ,
+\end{equation}
+which describes the electric field at \textbf{P} due to diffraction of light originated at $\mathbf{P_0}$ through a planar aperture as seen in Fig. \ref{fig:kirchoff_diffraction}.
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{kirchoff_diffraction}
+  \caption{Schematic for Fresnel-Kirchoff Diffraction formula}
+  \label{fig:kirchoff_diffraction}
+\end{figure}
+The boundary conditions imposed on both the field and its normal derivative in order to obtain the Fresnel-Kirchhoff diffraction formula are known to be mathematically inconsistent \cite{Lucke_2006, Heurtley:73, Sommerfeld:1954:O}.  The diffraction formula shows strong deviation from the physical solution when the observation point is close to the diffracting screen and it also fails to calculate the correct intensity pattern for a Poisson's spot created by diffraction from an annular aperture. Choosing an alternative Green's function and removing the boundary condition on the normal derivative of the field Sommerfeld got rid of the inconsistencies. New solution:
+\begin{equation}
+\label{eq:rayleigh_sommerfeld}
+E(\vec{P}) = -\frac{iu_0}{\lambda}\int \int _S \frac{e^{i\vec{k}(\vec{r}+\vec{s})}}{rs} \cos (\vec{n},\vec{s}) d\vec{S} \quad ,
+\end{equation}
+is known as the ``Rayleigh-Sommerfeld Diffraction Formula''.
+
+\subsection{Fresnel and Fraunhofer Diffraction}
+%
+% In Fig. \ref{fig:kirchoff_diffraction} if the distance between point \textbf{O} and point $\mathbf{P_0}$ or \textbf{P} are much larger compared to the size of the aperture, the term $\left[\cos (\vec{n},\vec{r}) - \cos (\vec{n},\vec{s})\right]$ in Eq. \ref{eq:fresnel_kirchoff} will vary negligibly compared to $e^{i\vec{k}(\vec{r}+\vec{s})}$ and it can be approximated as $2\cos \delta$, where $\delta$ is the angle between the line $\mathbf{P_0 P}$ and the normal to the aperture. 
+
+Eq. \ref{eq:rayleigh_sommerfeld} can be rewritten in terms of the field in the aperture as:
+\begin{equation}
+\label{eq:rayleigh_updated}
+E(\vec{P}) = \frac{1}{i\lambda}\int \int _S E(\vec{Q}) \frac{e^{i\vec{k}\vec{s}}}{s} \cos (\theta) d\vec{S} \quad ,
+\end{equation}
+where $E(\vec{Q})$ is the field at \textbf{Q} on the aperture and $\theta$ is $\cos (\vec{n},\vec{s})$, the angle between the normal to the aperture and the vector $\vec{s}$. If we assume the coordinates of the point:
+\begin{subequations}
+\begin{equation}
+P_0 \equiv \left(x_0, y_0, z_0\right) \quad ,
+\end{equation}
+\begin{equation}
+P \equiv \left(x, y, z\right) \quad ,
+\end{equation}
+\begin{equation}
+Q \equiv \left( \xi , \eta \right) 
+\end{equation}
+\end{subequations}
+the term $\cos \theta$ becomes exactly equal to $\frac{z}{s}$ and the Eq. \ref{eq:rayleigh_updated} simplifies to:
+\begin{equation}
+\label{eq:rayleigh_simple}
+E\left( x,y\right) = \frac{z}{i\lambda}\int \int _S E(\xi,\eta) \frac{e^{i\vec{k}\vec{s}}}{s^2} d\xi d\eta \quad ,
+\end{equation}
+where:
+\begin{equation}
+s = \sqrt{z^2 + \left( x - \xi \right) ^2 + \left( y-\eta \right) ^2} \quad .
+\end{equation}
+The Fresnel approximation:
+\begin{equation}
+\label{eq:fresnel_approx}
+s \approx z\left[ 1 + \frac{1}{2}\left(\frac{x-\xi}{z}\right)^2 + \frac{1}{2}\left(\frac{y-\eta}{z}\right)^2\right]
+\end{equation}
+further simplifies Eq. \ref{eq:rayleigh_simple} and we get:
+\begin{equation}
+\label{eq:fresnel_diffraction}
+\begin{split}
+E\left( x,y\right) = \frac{e^{ikz}}{i\lambda z}e^{i\frac{k}{2z}(x^2+y^2)}\int \int _{S} & E\left( \xi , \eta \right) e^{i\frac{k}{2z}(\xi^2+\eta ^2)} \\
+& \times e^{-i\frac{k}{2z}(x\xi+y\eta)} d\xi d\eta \quad ,
+\end{split}
+\end{equation}
+which is valid in the near field of the aperture. In the far-field the Fraunhofer approximation \cite{goodmanfourier}:
+\begin{equation}
+\label{eq:fraunhofer_approx}
+z >> \frac{k\left( \xi ^2 + \eta ^2\right)}{2}
+\end{equation}
+simplifies the Eq. \ref{eq:fresnel_diffraction} even further to:
+\begin{equation}
+\label{eq:fraunhofer_diffraction}
+E\left( x,y\right) = \frac{e^{ikz}}{i\lambda z}e^{i\frac{k}{2z}(x^2+y^2)}\int \int _{S}  E \left( \xi , \eta \right) e^{-i\frac{k}{2z}(x\xi+y\eta )} d\xi d\eta \quad ,
+\end{equation}
+which is same as the Fourier transform of the field in the aperture.
+
+
+
+
+

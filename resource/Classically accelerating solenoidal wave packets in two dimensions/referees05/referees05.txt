@@ -1,0 +1,136 @@
+Re: LT16129
+    Classically accelerating solenoidal wave packets in two dimensions
+    by Argha Mondal, Yishuai Xu, L. Andrew Wray, et al.
+
+Dear Prof. Grier,
+
+The above manuscript has been reviewed by our referees.  A critique
+drawn from the reports appears below.  On this basis, we judge that
+while the work probably warrants publication in some form, it does not
+meet the Physical Review Letters criteria of impact, innovation, and
+interest.
+
+The paper, with revision as appropriate, might be suitable for
+publication in Physical Review.  If you submit the paper to Physical
+Review, the editors of that journal will make the decision on
+publication of the paper, and may seek further review; however, our
+complete file will be available.
+
+If you submit this manuscript or a revision of it to Physical Review,
+be sure to respond to all referee comments and cite the code number
+assigned to the paper to facilitate transfer of the records.
+
+If you feel that you can overcome or refute the criticism, you may
+resubmit to Physical Review Letters.  Please accompany any resubmittal
+by a summary of the changes made and a brief response to all
+recommendations and criticisms.
+
+Yours sincerely,
+
+Stojan Rebic
+Associate Editor
+Physical Review Letters
+Email: prl@aps.org
+https://journals.aps.org/prl/
+
+Celebrating 125 Years of the Physical Review
+https://journals.aps.org/125years   #PhysRev125
+
+----------------------------------------------------------------------
+Report of Referee A -- LT16129/Mondal
+----------------------------------------------------------------------
+
+In this manuscript, the authors theoretically and experimentally
+demonstrate a self-rotating wave-packet, by virtue of proper
+overlapping of several Bessel wave-packets. However, such an approach
+to generate radially self-accelerating wavepackets has been studied in
+C. Vetter, et al, Phys. Rev. Lett. 113, 183901 (2014). Therefore, I do
+not think the work in this manuscript is significant enough for
+publication on Physical Review Letters.
+
+----------------------------------------------------------------------
+Report of Referee B -- LT16129/Mondal
+----------------------------------------------------------------------
+
+This is an interesting and very well written paper. In their
+presentation, the authors advance an optical analogy to the problem of
+circular motion of a particle in the force-free region of a circular
+box. They used this analogy to present yet another "apparent
+violation" of the Ehrenfest theorem.
+
+The misuse of different features of a wavepacket instead of its center
+of mass has been pointed out before. The superposition of Bessel
+beams, the optical realization of solenoidal beams and their
+non-diffractive features has also been amply discussed in the
+literature. Perhaps a better survey or prior works could be
+appropriate. Nevertheless, even though in this context the description
+of the authors' interpretation is clear and straightforward, they
+could have made a better case for their present scope. What do we
+learn from this analogy? Is this analogy really describing a wave
+packet in 2D? What is it remarkable about the truncated solenoidal
+modes not accelerating a la Balasz and Berry? Would a vectorial
+description of the superposition change anything?
+
+I could recommend publication if these issues are properly resolved.
+
+
+
+----------------------------------------------------------------------
+Second Report of Referee B -- LT16129/Mondal
+----------------------------------------------------------------------
+
+In their reply, the authors did not really make a case for what we are
+supposed to learn from this analogy. Experimental demonstration aside,
+how does this analogy broaden the community that "will benefit from an
+explanation of the true nature of these states"?
+
+Like I indicated in my previous report, this is a well-written paper
+and a nicely explained experiment but its significance is not evident.
+The fact that some integrals may be of "technical interest to
+specialists" does not support the need for publication in PRL.
+
+In conclusion, my major concerns have not been fully addressed in the
+revised manuscript.
+
+----------------------------------------------------------------------
+Report of Referee C -- LT16129/Mondal
+----------------------------------------------------------------------
+
+This is certainly an interesting paper that deals with a range of
+points. Disentangling that which has gone before and the novelty is
+clearly key, and I think is at the heart of the comments provided by
+the other two referees. My view is that the authors make a solid case
+for the novelty of the work and that there is enough general interest
+here related to the interplay between this class of beams,
+applications of such beam and the links between the fundamental
+properties of light to make it suitable for publication in PRL.
+
+My major concern is that the authors still do not seem to draw out the
+key points in the introduction. For example in response to Referee 2
+the comment is made:
+
+"Confusion has arisen regarding the nature of the freely propagating
+states once the confining boundary is removed. As our experimental
+realizations illustrate, these states also appear to accelerate, much
+like their confined counterparts. We demonstrate, however, that these
+states' small amount of diffraction is precisely what is required to
+transform their acceleration into uniform translation. This is now
+emphasized in the concluding paragraph."
+
+While the mention in the concluding paragraph is fine (although is
+maybe not as strong as the above), I'd like to see more emphasis on
+this in the introduction would be good. In fact putting the key points
+as enumerated for referee one in a more discursive form in the opening
+couple of paragraphs might be better at setting the scene than what is
+written.
+
+Before publication I'd suggest tightening up this introduction to make
+it clearer as the novelty in the work, as at present it seems to
+rather skirt around this issue. This confusion perhaps comes about due
+to a lot of the work feeling very familiar in terms of the beam
+shaping aspects, so I do think it worth the effort to really clarify
+what is new.
+
+Beyond that the technical aspects look solid, although it'd be good to
+see the error in 'b' reported and some note on why the experimental
+values seems rather different from the theoretical one.

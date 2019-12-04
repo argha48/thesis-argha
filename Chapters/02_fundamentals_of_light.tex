@@ -1,0 +1,299 @@
+\chapter{Fundamentals of Light}
+\label{ch:fundamentals_of_light}
+
+%    Move 1 establish your territory (say what the topic is about)
+%    Move 2 establish a niche (show why there needs to be further research on your topic)
+%    Move 3 introduce the current research (make hypotheses; state the research questions)
+
+
+%    state the general topic and give some background
+%    provide a review of the literature related to the topic
+%    define the terms and scope of the topic
+%    outline the current situation
+%    evaluate the current situation (advantages/ disadvantages) and identify the gap
+%    identify the importance of the proposed research
+%    state the research problem/ questions
+%    state the research aims and/or research objectives
+%    state the hypotheses
+%    outline the order of information in the thesis
+%    outline the methodology
+
+% https://www.scribbr.com/theses-examples/examples-dissertation-phd-theses/
+
+%\section{IPH}
+
+
+\section{History of Optics}
+The first time mankind wanted to understand the light dates back to the age of Greek Philosophers \cite{Vohnsen_2004}. They started experimenting to figure out - what is light, and how we can take advantage of its properties. Three most popular school of thoughts that originated during that time were: (1) according to the Pythagorans something emited by the eye interacted with the object in front. (2) Democritus hypothesises exactly the opposite; the objects creates something that carries information about the object's shape and color, which interacts with the human eye. And (3) the people who followed Empedocles believed its is a combined process of the previous two ideas. 
+\begin{figure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{pythagoras}
+  \label{fig:pythagoras}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{democritus}
+  \label{fig:democritus}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{empedocles}
+  \label{fig:empedocles}
+\end{subfigure}%
+\caption{Three of the most popular school of thought about the properties of light in the age of Greek philosophers: Pythagoras (left) conjectured that eyes interacted with an object by emitting something. Source: FixQuotes.com \cite{pythagoras_pic}. Democritus's (middle) view was the opposite; the eyes receive information about the object through something which is emitted by the item. Source: Atomic Model Timeline \cite{democritus_pic}. And Empedocles (right) believed both the eyes and the object emits information in some form in order for it to be perceived by humans. Source: History-biography.com \cite{empedocles_pic}.}
+\label{fig:early_hypothesis}
+\end{figure}
+But the theory of geometrical optics started only with Euclid  in 300 B.C.\cite{Abetti1971}, when he stated the law of reflection: the angle of incidence is equal to the angle of reflection. It took more than ~1500 years after that when Huygens (1690) considered the wave like nature of light. With the help of the hypothesis: light is a wave and it propagates as spherical waves Huygens successfully explained reflection and diffraction. Fresnel (1819) paved the way for a solid wave theory of light by conducting several experiments which confirmed that light propagates as a sum of Huygens wave. 
+
+\section{Light is Electromagnetic Waves}
+Almost 50 years after Fresnel, Maxwell theoretically derived the now famous Maxwell's Equations which can be found in his 1861 paper \cite{ClerkMaxwell_1861}. These equations :
+\begin{subequations}
+\label{eq:maxwelleqs}
+\begin{equation}
+\label{eq:maxwellcoulomb}
+\nabla\cdot \vec{E}                \quad  = \quad \frac{\rho}{\epsilon _0} \quad,                          \quad \text{(Coulomb)}
+\end{equation}
+\begin{equation}
+\label{eq:maxwellgauss}
+\nabla\cdot \vec{B}                \quad  = \quad 0\quad,                          \quad \text{(Gauss)}   \\[5pt]
+\end{equation}
+\begin{equation}
+\label{eq:maxwellamp}
+\quad \nabla\times\vec{E}   = -\frac{\partial\vec{B}}{\partial t} \quad,   \quad \text{(Faraday)}   \\[5pt]
+\end{equation}
+\begin{equation}
+\label{eq:maxwellfaraday}
+\quad \nabla\times\vec{B}  = \mu _0 \vec{J} + \mu _0 \epsilon _0 \frac{\partial \vec{E}}{\partial t} \quad,    \quad \text{(Ampère)} \\[5pt]
+\end{equation}
+\end{subequations}
+draws a connection between the time varying electric field $\electricfield$ and $\magneticfield$ in a definitive sense and shows the relationship of charge density $\rho (\vec{r},t)$ and electric current $\vec{J}(\vec{r},t)$ with them. Equation~\eqref{eq:maxwellcoulomb} is the first Maxwell's Equations, which is also known as the Gauss' Law; tells us how the electric field behaves around a charge density. The Eq.~\eqref{eq:maxwellgauss} states that magnetic monopole does not exist and the divergence of the magnetic field $\magneticfield$ is always $0$ through any volume in space. Equation~\eqref{eq:maxwellfaraday} is Faraday's Law that shows current can be induced with in a loop if there is a changing magnetic field flowing through it. The fourth of the Maxwell's Equations describes how time varying electric flux gives rise to magnetic field, which is also interpretated as Ampère's Law. In vacuum $\rho(\vec{r},t) = 0$ and $\vec{J}(\vec{r},t) = 0$ simplifies the Maxwell's Equations to :
+\begin{subequations}
+\begin{equation}
+\label{eq:maxwell_E}
+\nabla\cdot \vec{E}  = 0 \quad, \quad  \nabla\times\vec{E}   = -\frac{\partial\vec{B}}{\partial t}
+\end{equation}
+\begin{equation}
+\label{eq:maxwell_M}
+\nabla\cdot \vec{B}  = 0 \quad, \quad \nabla\times\vec{B}  =  \mu _0 \epsilon _0 \frac{\partial \vec{E}}{\partial t}
+\end{equation}
+\end{subequations}
+Taking the curl of the Eq.~\eqref{eq:maxwell_E} and Eq.~\eqref{eq:maxwell_M} we obtain the wave equations:
+\begin{subequations}
+\begin{equation}
+\label{eq:waveeq_E}
+\left( \nabla ^2 + \frac{1}{c^2}\frac{\partial ^2}{\partial t^2}\right)\vec{E} = 0 \quad ,
+\end{equation}
+\begin{equation}
+\label{eq:waveeq_B}
+\left( \nabla ^2 + \frac{1}{c^2}\frac{\partial ^2}{\partial t^2}\right)\vec{B} = 0 \quad ,
+\end{equation}
+\end{subequations}
+where $c$ is defined as:
+\begin{equation}
+\label{eq:speed_of_light}
+c = \frac{1}{\sqrt{\mu _0 \epsilon _0}} \quad ,
+\end{equation}
+which is same as the speed of light. In $\mathrm{1865}$ Maxwell predicted that light is an electromagnetic phenomenon \cite{ClerkMaxwell_1865}. Later between $1886$ and $1889$ Hertz conducted several experiments to prove Maxwell's prediction. In his seminal paper: ``On Electromagnetic Effects Produced by Electrical Disturbances in Insulators'', Hertz showed that electromagnetic waves traveling at the speed of light over a distance \cite{dagostino1975}.
+
+\section{Solution of Wave Equations}
+The general solutions to Eq.~\eqref{eq:waveeq_E} and Eq.~\eqref{eq:waveeq_B}:
+\begin{subequations}
+\begin{equation}
+\label{eq:Electridfield}
+\vec{E}(\vec{r},t) = E_0 \exp \left(i\vec{k}\cdot \vec{r} - i\omega t\right) \vec{\pol}
+\end{equation}
+\begin{equation}
+\label{eq:Magneticfield}
+\vec{B}(\vec{r},t) = \frac{E_0}{c} \exp \left(i\vec{k}\cdot \vec{r} - i\omega t\right) \hat{k}\times \vec{\pol}
+\end{equation}
+\end{subequations}
+represents monochromatic plane waves \cite{jackson_classical_1999}, where $\vec{k}$ is the wave vector that tells us the direction of propagation of the wave and $\vec{\pol}$ is the axis of polarization. The wave number $k = |\vec{k}|$ is connected to $c$, speed of light, through the dispersion relation: $k = \omega / c$ and the wavelength can be calculated from $\lambda = 2\pi  / k$. Both electric (Eq.~\eqref{eq:Electridfield}) and magnetic (Eq.~\eqref{eq:Magneticfield}) fields are represented as a complex field because it is convenient for calculation. $\real \electricfield$ and $\real \magneticfield$ are the real part of $\electricfield$, and $\magneticfield$ respectively and they correspond to the actual electric and magnetic field. Due to the nature of our experimental setup we will consider only x-polarized electric field from here on.
+
+\section{Experimental Parameters}
+In Cartesian coordinate the light field can be described by six complex valued functions, two (electric field component and the magnetic field component) for each coordinate axis. The electric field of a monochromatic beam of light in Cartesian coordinate can be described as:
+\begin{equation}
+\label{eq:complexfield}
+\vec{E}(\vec{r},t) = {\displaystyle\sum_{j=1}^{3}}E_j\left(\vec{r}\right)\exp \left(-i\omega t\right)\vec{\polj}(\vec{r})
+\end{equation}
+where $E_j(\vec{r})$ is the complex scalar field and $\omega$ is the frequency of the light. Each component of the polarization $\vec{\polj}$ vector can be broken down into a magnitude and phase part like:
+\begin{equation}
+\label{eq:polarization}
+\polj(\vec{r}) = a_j(\vec{r}) e^{i\psi _j (\vec{r})} .
+\end{equation}
+The normalization constraint requires:
+\begin{equation}
+\label{eq:pol_amp}
+{\displaystyle\sum_{j=1}^{3}}a_j^2(\vec{r}) = 1 .
+\end{equation}
+If we make the assumption that all the polarization components have constant relative phase the Eq.~\eqref{eq:polarization} can be rewritten as:
+\begin{equation}
+\label{eq:pol_2}
+\pol (\vec{r}) = e^{i\psi (\vec{r})}{\displaystyle\sum_{j=1}^{3}}a_j(\vec{r})e^{i\psi _j}\hat{\polj} \quad ,
+\end{equation}
+where $\psi _j = 0$ in case of linearly polarized beam of light. $E_j(\vec{r})$ is a solution of the Helmholtz Equation \cite{goodmanfourier}:
+\begin{equation}
+\left(\nabla ^2 + k^2\right) E = 0
+\end{equation}
+and in the paraxial limit of the Helmholtz Equation $E_j(\vec{r})$ can be expressed as:
+\begin{equation}
+\label{eq:E_amp_phase}
+E_j \left(\vec{r}\right) = u_j\left(\vec{r}\right) e^{i\phi _j (\vec{r})}\quad ,
+\end{equation}
+where $u_j(\vec{r})$ is the amplitude and $\phi (\vec{r})$ is the phase of the scalar field.
+  
+
+
+\section{Diffraction of Light}
+
+First concrete study of the deviation of light from its rectilinear propagation \cite{hechtoptics}, which is known as ``diffraction'', was reported by Francesco Grimaldi \cite{bornwolf} in the his book 1665. To understand digital holographic microscopy \cite{Lee:07} it is essential to understand the limitations imposed by diffraction.
+
+\subsection{Rayleigh-Sommerfeld Diffraction Theory}
+According to Huygens principle every point on a wavefront can be considered as a secondary source which creates a spherical wavefront. Fresnel's postulation that such secondary wavefronts interfere with each other, in combination with Huygens' principle is known as the ``Huygens - Fresnel Principle''. From the Fig.\ref{fig:huygens_fresnel} , the electric field at point ``$\mathbf{P}$'' due to the secondary wave generated a small area $dS$ at point ``$\mathbf{Q}$'' can be written as:
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{huygens_fresnel_schematic}
+  \caption{According to Huygens-Fresnel principle a sample point $\mathbf{Q}$ is considered as a secondary source which emits a spherical wavefront. The electric field at point $\mathbf{P}$ is a superposition of all secondary wavefronts created on the surface of the parent wavefront with center at $\mathbf{O}$.}
+  \label{fig:huygens_fresnel}
+\end{figure}
+
+
+\begin{equation}
+\label{eq:huygen_fresnel}
+dE(\vec{P}) = K(\chi) \frac{u_0 e^{i\vec{k}\vec{r_0}}}{r_0}\frac{e^{i\vec{k}\vec{l}}}{l} d\vec{S} \quad ,
+\end{equation}
+where $\vec{r_0}$ is the radius of the parent spherical wavefront originated from point ``$\mathbf{O}$'' and $l$ is the distance between point ``$\mathbf{Q}$'' and ``$\mathbf{P}$''. $K(\chi)$ is the inclination factor which is maximum ($1$) when the propagation direction ``\textbf{OQ}'' aligns with ``\textbf{OP}''. Therefore the total field at ``\textbf{P}'' will be:
+\begin{equation}
+\label{eq:E_P}
+E(\vec{P}) =  \frac{u_0 e^{i\vec{k}\vec{r_0}}}{r_0} \int \int _{S} \frac{e^{i\vec{k}\vec{s}}}{s}  K(\chi) d\vec{S} \quad .
+\end{equation}
+
+Kirchoff \cite{kirchoff1883} showed that Huygens-Fresnel principle is an approximation of the now well known ``Fresnel-Kirchoff Diffraction Formula'':
+\begin{equation}
+\label{eq:fresnel_kirchoff}
+E(\vec{P}) = -\frac{iu_0}{2\lambda}\int \int _S \frac{e^{i\vec{k}(\vec{r}+\vec{s})}}{rs}\left[\cos (\vec{n},\vec{r}) - \cos (\vec{n},\vec{s})\right]d\vec{S} \quad ,
+\end{equation}
+which describes the electric field at \textbf{P} due to diffraction of light originated at $\mathbf{P_0}$ through a planar aperture as seen in Fig.~\ref{fig:kirchoff_diffraction}.
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{kirchoff_diffraction}
+  \caption{Fresnel-Kirchoff Diffraction formula describes the electric field at point $\mathbf{P}$ due to a point source placed at $\mathbf{P_0}$ and an aperture placed in between.}
+  \label{fig:kirchoff_diffraction}
+\end{figure}
+The boundary conditions imposed on both the field and its normal derivative in order to obtain the Fresnel-Kirchhoff diffraction formula are known to be mathematically inconsistent \cite{Lucke_2006, Heurtley:73, Sommerfeld:1954:O}.  The diffraction formula shows strong deviation from the physical solution when the observation point is close to the diffracting screen and it also fails to calculate the correct intensity pattern for a Poisson's spot created by diffraction from an annular aperture. Choosing an alternative Green's function and removing the boundary condition on the normal derivative of the field Sommerfeld got rid of the inconsistencies. New solution:
+\begin{equation}
+\label{eq:rayleigh_sommerfeld}
+E(\vec{P}) = -\frac{iu_0}{\lambda}\int \int _S \frac{e^{i\vec{k}(\vec{r}+\vec{s})}}{rs} \cos (\vec{n},\vec{s}) d\vec{S} \quad ,
+\end{equation}
+is known as the ``Rayleigh-Sommerfeld Diffraction Formula''.
+
+\subsection{Fresnel and Fraunhofer Diffraction}
+%
+% In Fig.~\ref{fig:kirchoff_diffraction} if the distance between point \textbf{O} and point $\mathbf{P_0}$ or \textbf{P} are much larger compared to the size of the aperture, the term $\left[\cos (\vec{n},\vec{r}) - \cos (\vec{n},\vec{s})\right]$ in Eq.~\eqref{eq:fresnel_kirchoff} will vary negligibly compared to $e^{i\vec{k}(\vec{r}+\vec{s})}$ and it can be approximated as $2\cos \delta$, where $\delta$ is the angle between the line $\mathbf{P_0 P}$ and the normal to the aperture. 
+
+Equation~\eqref{eq:rayleigh_sommerfeld} can be rewritten in terms of the field in the aperture as:
+\begin{equation}
+\label{eq:rayleigh_updated}
+E(\vec{P}) = \frac{1}{i\lambda}\int \int _S E(\vec{Q}) \frac{e^{i\vec{k}\vec{s}}}{s} \cos (\theta) d\vec{S} \quad ,
+\end{equation}
+where $E(\vec{Q})$ is the field at \textbf{Q} on the aperture and $\theta$ is $\cos (\vec{n},\vec{s})$, the angle between the normal to the aperture and the vector $\vec{s}$. If we assume the coordinates of the point:
+\begin{subequations}
+\begin{equation}
+P_0 \equiv \left(x_0, y_0, z_0\right) \quad ,
+\end{equation}
+\begin{equation}
+P \equiv \left(x, y, z\right) \quad ,
+\end{equation}
+\begin{equation}
+Q \equiv \left( \xi , \eta \right) 
+\end{equation}
+\end{subequations}
+the term $\cos \theta$ becomes exactly equal to $\frac{z}{s}$ and the Eq.~\eqref{eq:rayleigh_updated} simplifies to:
+\begin{equation}
+\label{eq:rayleigh_simple}
+E\left( x,y\right) = \frac{z}{i\lambda}\int \int _S E(\xi,\eta) \frac{e^{i\vec{k}\vec{s}}}{s^2} d\xi d\eta \quad ,
+\end{equation}
+where:
+\begin{equation}
+s = \sqrt{z^2 + \left( x - \xi \right) ^2 + \left( y-\eta \right) ^2} \quad .
+\end{equation}
+The Fresnel approximation:
+\begin{equation}
+\label{eq:fresnel_approx}
+s \approx z\left[ 1 + \frac{1}{2}\left(\frac{x-\xi}{z}\right)^2 + \frac{1}{2}\left(\frac{y-\eta}{z}\right)^2\right]
+\end{equation}
+further simplifies Eq.~\eqref{eq:rayleigh_simple} and we get:
+\begin{equation}
+\label{eq:fresnel_diffraction}
+\begin{split}
+E\left( x,y\right) = \frac{e^{ikz}}{i\lambda z}e^{i\frac{k}{2z}(x^2+y^2)}\int \int _{S} & E\left( \xi , \eta \right) e^{i\frac{k}{2z}(\xi^2+\eta ^2)} \\
+& \times e^{-i\frac{k}{2z}(x\xi+y\eta)} d\xi d\eta \quad ,
+\end{split}
+\end{equation}
+which is valid in the near field of the aperture. In the far-field the Fraunhofer approximation \cite{goodmanfourier}:
+\begin{equation}
+\label{eq:fraunhofer_approx}
+z >> \frac{k\left( \xi ^2 + \eta ^2\right)}{2}
+\end{equation}
+simplifies the Eq.~\eqref{eq:fresnel_diffraction} even further to:
+\begin{equation}
+\label{eq:fraunhofer_diffraction}
+E\left( x,y\right) = \frac{e^{ikz}}{i\lambda z}e^{i\frac{k}{2z}(x^2+y^2)}\int \int _{S}  E \left( \xi , \eta \right) e^{-i\frac{k}{2z}(x\xi+y\eta )} d\xi d\eta \quad ,
+\end{equation}
+which is same as the Fourier transform of the field in the aperture.
+
+
+\section{Optical Forces}
+
+\setlength{\epigraphwidth}{0.8\textwidth}
+\epigraph{``It is probable that a much greater energy of radiation might be obtained by means of concentrated rays from an electric lamp. Such rays falling on a thin metallic disc, delicately suspended in a vacuum, might perhaps produce an observable mechanical effect''}{\textit{J C Maxwell, 1873}}
+
+\begin{figure}
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{kepler}
+  \label{fig:kepler}
+\end{subfigure}%
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{halley}
+  \label{fig:halley}
+\end{subfigure}
+\caption{German mathematician and optician Johannes Kepler (left) conjectured the radiation pressure of the sunlight always directs the Halley's comet's (right) tail pointing away from the sun. He predicted solar field creates a repulsive force when interacting with the particles in the comet's tail. Source: Wikipedia \cite{kepler_pic, halley_comet}.}
+\label{fig:kepler_halley}
+\end{figure}
+
+The first realization of optical force was made by Kepler in $1619$, when he predicted the tail of Halley's comet was driven by the radiation pressure of the sunlight. Later using theory of electromagnetism, Maxwell showed that momentum transfer from electromagnetic wave manifests as radiation pressure while it interacts with an object. This momentum transfer can happen either via reflection/scattering or absorption. 
+
+In the past decade there has been a significant increase in the interest of understanding forces exerted by an electromagnetic wave interacting with small objects. Optical forces have provided convenient ways to control the dynamics of small objects. Such ability has major applications not only in biology but also in atomic physics and nonlinear physics. Non-uniform electric field can induce charge separation in neutral objects which leads to electric dipole moment \cite{jackson_classical_1999}. The electric dipole interacts with light's electromagnetic radiation through time-averaged Lorentz force \cite{Chaumet:00, gordon1973, Dungey:91}. For a sub-wavelength particles the Lorentz force is basically a combination of gradient force $(\vec{p}\cdot \vec{\nabla})\vec{E}$ and scattering and absorption force $\dot{\vec{p}}\times \vec{B}$ \cite{gordon1973}
+
+\begin{equation}
+\label{eq:Lorentz force}
+\begin{split}
+\vec{F_e} & = \frac{1}{2} \Re \lbrace (\vec{p}\cdot \vec{\nabla})\vec{E}^\star + \frac{1}{c} \dot{\vec{p}}\times \vec{B}^\star \rbrace \\
+				& = \frac{1}{2} \Re \lbrace \alpha _{e} E_j \partial _i E^\star _{j} \rbrace \quad ,
+\end{split}
+\end{equation}
+
+where $\alpha _e$ is complex polarizability of the induced electric dipole. It can written as $\alpha _e = \alpha^{\prime}_e + \alpha ^{\prime \prime}_{e}$, where $\alpha ^{\prime}_{e}$ and $\alpha ^{\prime \prime}_{e}$ are the real and imaginary part \cite{jackson_classical_1999} respectively. The imaginary part of the polarizability accounts for absorption and radiative losses. For a particle of radius $a_p$ and refractive index $n_p$ in a medium with refractive index $n_m$ the electric polarizability can be written as the Clausius-Mosotti-Draine relationship \cite{draine1993}:
+
+\begin{equation}
+\alpha _e = \frac{4\pi \epsilon _0 n^2_m K a^3_p}{1-i\frac{2}{3}K k^3 a^3_p} \quad \textit{, where }\quad K = \frac{n^2_p - n^2_m}{n^2_p + 2n^2_m}.
+\end{equation}
+
+Neither of these two forms of the Lorentz force in Eq.~\eqref{eq:Lorentz force} are intuitive and they are hard to relate with the physical forces. A more interpretable expression can be obtained by replacing the electric fields in Eq.~\eqref{eq:Lorentz force} with Eq.~\eqref{eq:E_amp_phase}:
+
+\begin{equation}
+\label{eq:Electric Lorentz force}
+\vec{F_e}(\vec{r}) = \frac{\omega ^2}{4}\alpha ^{\prime} _{e} \nabla u^2(\vec{r}) + \frac{\omega ^2}{2} \alpha ^{\prime \prime}_{e} u^2_{\vec{r}}\sum _{j=0}^{j=2} \nabla \phi _{j}(\vec{r})
+\end{equation}
+
+The first term in Eq.~\eqref{eq:Electric Lorentz force} is the intensity-gradient force. The second term is a phase-gradient force as reported in \cite{roichman2008} that is valid for arbitrary polarizations.
+
+
+
+
+%\section{Efficiency}
+%\section{Outline of Dissertation}
+%\section{Thesis Overview}

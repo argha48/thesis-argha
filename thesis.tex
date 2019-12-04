@@ -1,0 +1,203 @@
+% NYU PhD thesis format. Created by Jose Koiller 2007--2008.
+% Adapted by Chen Wang 2016 July 27th
+% Adapted by Mark Hannel May 2018
+% Adapted by Argha Mondal June 2019
+ 
+\documentclass[12pt,letterpaper]{report}
+%% \usepackage[draft]{graphicx}
+
+%% Replace the title, name, advisor name, graduation date and
+%% dedication below with your own. Graduation months must be January,
+%% May or September.
+\newcommand{\thesistitle}{Harnessing topological modes of light with digital holography}
+\newcommand{\thesisauthor}{Argha Mondal}
+\newcommand{\thesisadvisor}{David G. Grier}
+\newcommand{\graddate}{Month, 2019}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\graphicspath{{./Figures/}}
+
+%% This inputs your auxiliary file with \usepackage's and \newcommand's:
+%% It is assumed that that file is called "definitions.tex".
+%% Add your own definitions
+\input{Source/definitions}
+
+% Page setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% The following makes chapters and sections, but not subsections,
+%% appear in the TOC (table of contents). Increase to 2 or 3 to
+%% make subsections or subsubsections appear, respectively. It seems
+%% to be usual to use the "1" setting, however.
+\setcounter{tocdepth}{2}
+
+%% Sectional units up to subsubsections are numbered. To number
+%% subsections, but not subsubsections, decrease this counter to 2.
+\setcounter{secnumdepth}{3}
+
+%% Page layout (customized to letter paper and NYU requirements):
+\setlength{\parindent}{1.5cm}
+\setlength{\oddsidemargin}{.35in}
+\setlength{\textwidth}{5.8in}
+\setlength{\topmargin}{.1in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{8.3in}
+\setlength{\footskip}{.5in}
+
+%% Use the following commands, if desired, during production.
+%% Comment them out for final version.
+%\usepackage{layout} % defines the \layout command, see below
+%\setlength{\hoffset}{-.75in} % creates a large right margin for notes and \showlabels
+
+
+%% Use the line below for official NYU version, which requires
+%% double line spacing. For all other uses, this is unnecessary,
+%% so the line can be commented out.
+\doublespacing % requires package setspace, invoked above
+
+%% Each of the following lines defines the \com command, which produces
+%% a comment (notes for yourself, for instance) in the output file.
+%% Example:    \com{this will appear as a comment in the output}
+%% Choose (uncomment) only one of the three forms:
+%\newcommand{\com}[1]{[/// {#1} ///]}       % between [/// and ///].
+\newcommand{\com}[1]{\marginpar{\tiny #1}} % as (tiny) margin notes
+%\newcommand{\com}[1]{}                     % suppress all comments.
+
+
+%% Cross-referencing utilities. Use one or the other--whichever you prefer--
+%% but comment out both lines for final version.
+%\usepackage{showlabels}
+%\usepackage{showkeys}
+
+%The Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% Produces a test "layout" page, for "debugging" purposes only.
+%% Comment out for final version.
+%\layout % requires package layout (see above, on this same file)
+
+
+    %%%%%%Preliminary pages
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %% Sets page numbering to "roman style" i, ii, iii, iv, etc:
+    \pagenumbering{roman}
+
+    %%%%%% Title page %%%%%%
+    \input{Content/titlepage}
+    \newpage
+    
+    %%%%%% Copyright %%%%%%
+    \input{Content/copyright}
+    \doublespacing
+    \newpage
+    
+    %%%%%% Blank page %%%%%%
+    \thispagestyle{empty}
+    \vspace*{0in}
+    \newpage
+    
+    %%%%%% Copyright %%%%%%
+    \input{Content/dedication}
+    \newpage
+    
+    %%%%%% Acknowledgments %%%%%%
+    \input{Content/acknowledgments}
+    
+    \newpage
+    %\include{preface}
+    %%%%%% Abstract %%%%%%
+    \input{Content/abstract}
+
+    %%%%%% Table of Contents %%%%%%
+    {
+      \hypersetup{linkcolor=black}
+      \tableofcontents
+    }
+    \newpage
+
+    %%%%%% List of Figures %%%%%%
+    {
+      \hypersetup{linkcolor=black}
+      \listoffigures
+    }
+    \newpage
+%
+%    %%%%%% List of Tables %%%%%%
+%    {
+%      \hypersetup{linkcolor=black}
+%      \listoftables
+%      }
+%    \newpage
+
+%%    %%%%%% List of Appendices %%%%%%
+%%    %If you have only one appedix comment this list of appendices out
+%%    {
+%%      \hypersetup{linkcolor=black}
+%%      \listofappendices
+%%      \addcontentsline{toc}{chapter}{List of Appendices} % Total hack.
+%%    }
+%%    \newpage
+ 
+    %%%%%% Chapters %%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \pagenumbering{arabic}
+    
+    \input{Chapters/01_introduction}
+    \newpage
+    
+    \input{Chapters/02_fundamentals_of_light}
+    \newpage
+    
+    \input{Chapters/03_topological_modes}
+    \newpage 
+    
+   \input{Chapters/04_intermediate}
+   \newpage
+   
+   \input{Chapters/05_QM_analogy}
+   \newpage
+  
+   \input{Chapters/06_conclusion}
+   \newpage
+
+    %%%%% Appendices start %%%%%%%%%%%%%%%%
+    %% Comment out the following line if your thesis has no appendix
+    % \appendix
+    
+    %If you have only one appendix copy this line out
+    %% \phantomsection
+    %% \addcontentsline{toc}{chapter}{Appendices}
+    
+    % 
+    % If you have multiple appendices, they shouldn't individually appear
+    % in the table of contents, but rather be listed in the List of
+    % appendices. To do this, put the following code(defined in
+    % definitions.tex) at the front of each appendix file(Tip from Jan Smrek):
+    %
+    % %\SkipTocEntry\chapter{Appendix Title} 
+    % %\label{app:appendixtitle}
+    % %\appcaption{\thechapter \space Appendix Title}
+    %
+    %\include{appendix}
+%
+%    \begin{appendices}      
+%      \include{Chapters/appendix_01_camera}
+%      %\include{Chapters/appendix_02_lorenzmie_approx}
+%      \include{Chapters/appendix_02_discretize_dw}
+%     \end{appendices}
+
+    
+
+    \clearpage
+
+%\addcontentsline{toc}{chapter}{Reference}
+%\singlespacing
+\renewcommand{\bibname}{Bibliography}
+\nocite{apsrev41Control}
+\bibliographystyle{apsrev4-1}
+\bibliography{Bibliography/abbreviations,Bibliography/argha,Bibliography/dgg,Bibliography/grier,Bibliography/tweezer,Bibliography/accelerating}
+
+\end{document}
