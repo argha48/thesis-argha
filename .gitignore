@@ -8,8 +8,11 @@ bin-release/
 .settings/
 .DS_Store
 =0.0.1a3
+.gitignore
 # *********** Folder Exclusions **************
 /Figures
+/resource
+/officials
 
 # *********** Tableau Exclusions *************
 *.twbr
