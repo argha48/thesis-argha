@@ -10,6 +10,7 @@ bin-release/
 =0.0.1a3
 .gitignore
 ~$pyright permission.docx
+
 # *********** Folder Exclusions **************
 /Figures
 /resource
