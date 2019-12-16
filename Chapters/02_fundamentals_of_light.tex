@@ -246,40 +246,35 @@ which is same as the Fourier transform of the field in the aperture.
   \includegraphics[width=.9\linewidth]{halley}
   \label{fig:halley}
 \end{subfigure}
-\caption{German mathematician and astronomer Johannes Kepler (left) conjectured the radiation pressure of sunlight couls explain why comet tails always point away from the sum the Halley's comet's (right) tail pointing away from the sun. He predicted solar field creates a repulsive force when interacting with the particles in the comet's tail. Source: Wikipedia \cite{kepler_pic, halley_comet}.}
+\caption{German mathematician and astronomer Johannes Kepler (left) conjectured the radiation pressure of sunlight could explain why comet tails always point away from the sun including the Halley's comet's (right) tail. Source: Wikipedia \cite{kepler_pic, halley_comet}.}
 \label{fig:kepler_halley}
 \end{figure}
 
 The first proposal that light might exert forces was made by Kepler in $1619$, when he suggested the tail of Halley's comet might be created by the radiation pressure of sunlight. Two and a half centuries later Maxwell used his theory of electromagnetism to demonstrate that electromagnetic waves carry momentum and that this momentum can be transferred to illuminated objects as radiation pressure while it interacts with the object. This momentum transfer can happen either via reflection/scattering or absorption. 
 
-In the past decade there has been a significant increase in the interest of understanding forces exerted by an electromagnetic wave interacting with small objects. Optical forces have provided convenient ways to control the dynamics of small objects. Such ability has major applications not only in biology but also in atomic physics and nonlinear physics. Non-uniform electric field can induce charge separation in neutral objects which leads to electric dipole moment \cite{jackson_classical_1999}. The electric dipole interacts with light's electromagnetic radiation through time-averaged Lorentz force \cite{Chaumet:00, gordon1973, Dungey:91}. For a sub-wavelength particles the Lorentz force is basically a combination of gradient force $(\vec{p}\cdot \vec{\nabla})\vec{E}$ and scattering and absorption force $\dot{\vec{p}}\times \vec{B}$ \cite{gordon1973}
+In the past fifty years there has been a significant increase in the interest of understanding forces exerted by an electromagnetic wave interacting with small objects. Arthur Ashkin first pointed out in 1970 that optical forces could provide convenient ways to control the dynamics of small objects and that this would have major applications inatomic physics, biology and nonlinear physics. Light electric field and magnetic field exert forces on small neutral objects by inducing time varying chharge multipoles in them and then exerting forces and torques on the induced multipoles [Find ref] \cite{jackson_classical_1999,Chaumet:00, gordon1973, Dungey:91}. For particles that are much smaller than the wavelength of light the Lorentz force is dominated by dipole contributions. The induced dipole moment experience a force in gradients of the electric field  $(\vec{p}\cdot \vec{\nabla})\vec{E}$. The time-varying dipole moment acts like a current that couples to the magnetic field, $\vec{\dot{p}}\times \vec{B}$. The resulting dipole order force has the time averaged form \cite{gordon1973}
 
 \begin{equation}
 \label{eq:Lorentz force}
-\begin{split}
-\vec{F_e} & = \frac{1}{2} \Re \lbrace (\vec{p}\cdot \vec{\nabla})\vec{E}^\star + \frac{1}{c} \dot{\vec{p}}\times \vec{B}^\star \rbrace \\
-				& = \frac{1}{2} \Re \lbrace \alpha _{e} E_j \partial _i E^\star _{j} \rbrace \quad ,
-\end{split}
+\vec{F_e}  = \frac{1}{2} \Re \lbrace (\vec{p}\cdot \vec{\nabla})\vec{E}^\star + \frac{1}{c} \dot{\vec{p}}\times \vec{B}^\star \rbrace 
 \end{equation}
-
-where $\alpha _e$ is complex polarizability of the induced electric dipole. It can written as $\alpha _e = \alpha^{\prime}_e + \alpha ^{\prime \prime}_{e}$, where $\alpha ^{\prime}_{e}$ and $\alpha ^{\prime \prime}_{e}$ are the real and imaginary part \cite{jackson_classical_1999} respectively. The imaginary part of the polarizability accounts for absorption and radiative losses. For a particle of radius $a_p$ and refractive index $n_p$ in a medium with refractive index $n_m$ the electric polarizability can be written as the Clausius-Mosotti-Draine relationship \cite{draine1993}:
+The induced dipole is proportional to the local electric field, $\hat{\vec{p}} = \alpha _{e}\vec{\hat{E}}$, where $\alpha _{e}$ is the particle's electric dipole polarizability. In 2000, Chaumet and Vesperinas \cite{Chaumet:00} ahowed that Eq.~\eqref{eq:Lorentz force} could be rewritten in the compact and evocative form:
+\begin{equation}
+\label{eq:chaumet force}
+\vec{F_e} = \frac{1}{2} \Re \lbrace \alpha _{e} E_j \partial _i E^\star _{j} \rbrace \quad ,
+\end{equation}
+This form is useful for developing a practical framework for controlling optical forces. The optical force is parametrized by the object's polarizability, which depends on its size,shape and chemical composition. $\alpha _e$ is complex valued and can written as $\alpha _e = \alpha^{\prime}_e + i \alpha ^{\prime \prime}_{e}$, where $\alpha ^{\prime}_{e}$ and $\alpha ^{\prime \prime}_{e}$ are the real and imaginary part \cite{jackson_classical_1999} respectively. The imaginary part of the polarizability accounts for absorption and radiative losses. For the special case of a sphere of radius $a_p$ and refractive index $n_p$ in a medium with refractive index $n_m$ the electric polarizability is given by the Clausius-Mosotti-Draine relationship \cite{draine1993}:
 
 \begin{equation}
-\alpha _e = \frac{4\pi \epsilon _0 n^2_m K a^3_p}{1-i\frac{2}{3}K k^3 a^3_p} \quad \textit{, where }\quad K = \frac{n^2_p - n^2_m}{n^2_p + 2n^2_m}.
+\label{eq:clausius mosotti}
+\alpha _e = \frac{4\pi \epsilon _0 n^2_m K a^3_p}{1-i\frac{2}{3}K k^3 a^3_p} \quad \textsf{, where }\quad K = \frac{n^2_p - n^2_m}{n^2_p + 2n^2_m}.
 \end{equation}
-
-Neither of these two forms of the Lorentz force in Eq.~\eqref{eq:Lorentz force} are intuitive and they are hard to relate with the physical forces. A more interpretable expression can be obtained by replacing the electric fields in Eq.~\eqref{eq:Lorentz force} with Eq.~\eqref{eq:E_amp_phase}:
+Here $\epsilon _{0}$ is the permittivity of space and $k$ is the wave number of the light. Equation.~\eqref{eq:chaumet force} and Eq.~\eqref{eq:clausius mosotti} specify what force can be expected from a specified electric light field. They are less useful for designing waves to exert derived forces. A more interpretable expression can be obtained by replacing the electric fields in Eq.~\eqref{eq:Lorentz force} with Eq.~\eqref{eq:E_amp_phase} which yields:
 
 \begin{equation}
 \label{eq:Electric Lorentz force}
-\vec{F_e}(\vec{r}) = \frac{\omega ^2}{4}\alpha ^{\prime} _{e} \nabla u^2(\vec{r}) + \frac{\omega ^2}{2} \alpha ^{\prime \prime}_{e} u^2_{\vec{r}}\sum _{j=0}^{j=2} \nabla \phi _{j}(\vec{r})
+\vec{F_e}(\vec{r}) = \frac{\omega ^2}{4}\alpha ^{\prime} _{e} \sum _{j=0}^{2}\nabla u_{j}^{2}(\vec{r}) + \frac{\omega ^2}{2} \alpha ^{\prime \prime}_{e} \sum _{j=0}^{2} \nabla u_{j}^{2}\phi _{j}(\vec{r})
 \end{equation}
 
-The first term in Eq.~\eqref{eq:Electric Lorentz force} is the intensity-gradient force. The second term is a phase-gradient force as reported in \cite{roichman2008} that is valid for arbitrary polarizations.
+The first term in Eq.~\eqref{eq:Electric Lorentz force} is proportional to the gradient of the light intensity. It is manifestly conservative and tends to draw dielectric particles ($\alpha _{e}^{\prime}>0$) toward intensity maxima. This intensity gradient force allows focused beams if light to trap small objects in three dimensions, thereby acting as ``optical tweezers'' \cite{Ashkin:86}. The second term in Eq.~\eqref{eq:Electric Lorentz force} is directed by gradients of the phase and describes a non-conservative force that identify with the radiative pressure.
 
-
-
-
-%\section{Efficiency}
-%\section{Outline of Dissertation}
-%\section{Thesis Overview}
