@@ -9,7 +9,7 @@ The term ``Tractor beam'' was coined by Steven Block in 1992 \cite{block1992} an
 \label{eq:Tractor Fz condition}
 \vec{F}_{z}\cdot \vec{z} <0
 \end{equation}
-to become a tractor beam. It can impart a conservative force on the object towards the direction of the source.  In this sense an optical tweezers is not a tractor beam. In $2005 $ \v Ci\v zm\'ar et.al. \cite{cizmar2005} presented optical conveyor belt which can transport submicron objects over a distance of $\SI{250}{\um}$. Even though it has a long range of transportability, this mode of light ``is based on a standing wave (SW) created from two counter-propagating nondiffracting beams where the phase of one of the beams can be changed. \cite{cizmar2005}'' and therefore it is not a tractor beam by our definition. One sided tractor beam was experimentally demonstrated by Ruffner et.al. \cite{ruffner2012prl} which was created by coherently superposing coaxial Bessel beams.
+to become a tractor beam. It can impart a conservative force on the object towards the direction of the source.  In this sense an optical tweezers is not a tractor beam. In $2005 $ \v Ci\v zm\'ar \emph{et al.} \cite{cizmar2005} presented optical conveyor belt which can transport submicron objects over a distance of $\SI{250}{\um}$. Even though it has a long range of transportability, this mode of light ``is based on a standing wave (SW) created from two counter-propagating nondiffracting beams where the phase of one of the beams can be changed. \cite{cizmar2005}'' and therefore it is not a tractor beam by our definition. One sided tractor beam was experimentally demonstrated by Ruffner \emph{et al.} \cite{ruffner2012prl} which was created by coherently superposing coaxial Bessel beams.
 
 Because Bessel functions form a complete set of orthogonal basis functions which are solutions to the paraxial Helmholtz equation, any propagation invariant or linear non-diffracting mode of light can be expressed as a linear superposition \cite{Ruffner:14, Lee:10, ruffner2012prl} of Bessel beams. In the force calculation for a single Bessel beam using Eq.~\eqref{eq:Electric Lorentz force} it is evident that the z-component of $\vec{F_e}(\vec{r})$:
 \begin{equation}
@@ -181,7 +181,7 @@ a range of convergence angles.
 Interference among these superposed modes
 causes periodic axial intensity variations,
 and so limits the propagation-invariant
-range of the superposition \cite{ruffner12a} as shown in Fig.~\ref{fig:previous bessel hologram}. Figure.~\ref{fig:previous bessel hologram}(d) shows a conveyor beam created by using a digital hologram that encodes two Bessel beam as a ring with certain thickness. Using this method constraints the propagation invariant range to the order of $100\mathrm{\mu m}$
+range of the superposition \cite{ruffner12a} as shown in Fig.~\ref{fig:previous bessel hologram}(b). Figure.~\ref{fig:previous bessel hologram}(d) shows a conveyor beam created by using a digital hologram that encodes two Bessel beam as a ring with certain thickness. Using this method constraints the propagation invariant range to the order of \SI{100}{\um}
 
 \begin{figure}[t!]
   \centering
@@ -205,17 +205,6 @@ poor mode fidelity and extremely poor diffraction efficiency.
 
 
 \section{Intermediate Plane Holography}
-
-
-
-\begin{figure}[t!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{lensphase}
-  \caption{blah blah.}
-  \label{fig:blah blah}
-\end{figure}
-
-
 
 Structuring laser beams with computer-generated holograms
 has created revolutionary opportunities for
@@ -411,20 +400,16 @@ affording sufficient space for practical implementation.
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=\textwidth]{intermediate4sm}
-  \caption{Intermediate-plane holography. (a) Conventional
-    holographic projection of a Bessel beam.  The field diffracted
-    by a ring hologram propagates to a converging lens of
-    focal length $f$ that
-    projects it into the non-diffracting mode.
-    (b) A phase-only hologram
+  \includegraphics[width=\textwidth]{intermediate4smnew}
+  \caption{Intermediate-plane holography. 
+    (a) A phase-only hologram
     in an intermediate plane recreates the ring-hologram's
     wavefront structure at substantially higher diffraction efficiency.
-    (c) Moving the intermediate plane to $z = f$ and incorporating
+    (b) Moving the intermediate plane to $z = f$ and incorporating
     the phase function for the converging lens
     creates a mode converter that projects the Bessel beam directly.
     Intermediate-plane phase holograms for
-    (d) an optical conveyor and (e) a solenoid beam.  The beams
+    (c) an optical conveyor and (d) a solenoid beam.  The beams
     projected by these holograms are shown in Fig.~\ref{fig:tractorbeams}.}
   \label{fig:intermediate}
 \end{figure}
@@ -451,7 +436,7 @@ for the intermediate-plane hologram,
 thereby eliminating the need for
 the physical lens altogether.
 This mode of operation is presented in
-Fig.~\ref{fig:intermediate}(c) and is the
+Fig.~\ref{fig:intermediate}(b) and is the
 approach we will adopt for experimental demonstrations.
 
 For the particular case of a Bessel beam,
@@ -479,10 +464,81 @@ whose phase is the first-order approximation to the
 intermediate-plane phase hologram encoding the Bessel beam.
 The upper limit of integration in Eq.~\eqref{eq:radialintegral}
 ignores exponentially small contributions from terms with
-$q > k$ because $kz \gg 1$ in practice.
+$q > k$ because $kz \gg 1$ in practice. Due to unknown solution of
+the integral form in Eq.~\eqref{eq:radialintegral} we switch to the inverse Fourier
+Cartesian coordinate space as used in the Fresnel approximation of 
+Rayleigh-Sommerfeld equation in Eq.~\eqref{eq:fresnel_diffraction}. Unlike far field
+approximation pointed out in Eq.~\eqref{eq:fraunhofer_approx} this approximation is
+not valid in intermediate-plane holography. The idea is to retain as much information
+as possible while reducing the rate of amplitude modulation so that the second term 
+in Eq.~\eqref{eq:extrafield} is small or negligible.
 
-Equation~\eqref{eq:radialintegral} can be computed
-numerically for arbitrary $\alpha$ and $m$.  
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=\textwidth]{intermediate4sm}
+  \caption{[MAKE THE RIGHT IMAGE XXXXXXX] Schematic Intermediate-plane field calculation.}
+  \label{fig:intermediate field schema}
+\end{figure}
+Following the schematic in Fig.~\ref{fig:intermediate field schema}, 
+the electric field on plane $z=z$ will be,
+\begin{equation}
+\label{eq:intermediate field a}
+U(x,y,z) = \frac{i}{\lambda}\int _{x^{\prime},y^{\prime}}U(x^{\prime},y^{\prime},0)
+					\cos \phi ^{\prime} \frac{\exp 
+					\left( ik\ell \right)}{\ell}dx^{\prime}dy^{\prime} \quad .
+\end{equation}
+$\cos\theta^{\prime}$ can be written in terms of $z$ and $\ell$ as 
+\begin{equation}
+\cos \phi ^{\prime} = \frac{z}{\ell}
+\end{equation}
+which yields,
+\begin{equation}
+\label{eq:intermediate field b}
+U(x,y,z) = \frac{i}{\lambda}\int _{x^{\prime},y^{\prime}}U(x^{\prime},y^{\prime},0)
+					\frac{z}{\ell ^2} \exp 
+					\left( ik\ell \right)dx^{\prime}dy^{\prime} \quad .
+\end{equation}
+In Cartesian coordinate $\ell$ can be written as:
+\begin{equation}
+\label{eq:ell in cartesian}
+\ell ^2 = (x-x^{\prime})^{2} + (y-y^{\prime})^{2} + z^{2} \quad ,
+\end{equation}
+and $\rho = x^2 + y^2 + z^2$. We can rewrite $\ell$ from 
+Eq.~\eqref{eq:ell in cartesian} in terms of $\rho$ as 
+\begin{equation}
+\label{eq:ell in r}
+l = \rho - \frac{xx^{\prime}+yy^{\prime}}{\rho} + \frac{x^{\prime^{2}} + y^{\prime^{2}}}{2\rho}
+			+ \mathcal{O}\lbrace \frac{x^2x^{\prime ^{2}}}{\rho ^3},\frac{y^2y^{\prime ^{2}}}{\rho ^3} \rbrace
+\end{equation}
+Moving to polar coordinate from Cartesian coordinate such that
+\begin{subequations}
+\begin{equation}
+\left( x^{\prime},y^{\prime}\right) \equiv \left( \eta , \phi \right) \quad ,
+\end{equation}
+\begin{equation}
+ \left( x,y\right) \equiv \left(r , \theta \right) \quad ,
+\end{equation}
+\end{subequations}
+we can rewrite Eq.~\eqref{eq:intermediate field b} as
+\begin{equation}
+\label{eq:intermediate field c}
+U(r ,\theta) = \frac{i}{\lambda} \frac{z}{\rho ^2}\int U(\eta ,\phi)\exp \left[ -\frac{ik}{\rho}\left( r \eta \cos (\theta - \phi) - \eta ^2 \right)\right]d^2\eta
+\end{equation}
+In order to produce a Bessel beam in $(r,\theta)$ plane we need 
+\begin{equation}
+\label{eq:delta field}
+U(\eta , \phi) = \delta (\eta - R_{\alpha}) \quad ,
+\end{equation}
+where $R_{\alpha}$ is the radius of the delta ring similar to what is mentioned in Eq.~\eqref{eq:besselhologram}. Replacing $U(\eta ,\phi)$ with Eq.~\eqref{eq:delta field} in Eq.~\eqref{eq:intermediate field c} yields:
+\begin{equation}
+\label{eq:intermediate field d}
+U(r ,\theta) = \frac{i}{\lambda} \frac{R_{\alpha}z}{\rho ^2}  \exp 
+						\left[ i\left( k\rho + \frac{k}{\rho}R_{\alpha}^2\right)\right]
+						\int _{0}^{2\pi}  e^{-i\frac{k}{\rho}R_{\alpha}r\cos (\theta - \phi)} d\theta
+\end{equation}
+
+Equation~\eqref{eq:intermediate field d} can be computed
+analytically for arbitrary $\alpha$ and $m$.  
 In the limit $z > R_\alpha$, it reduces to
 \begin{subequations}
   \label{eq:intermediatehologram}
@@ -495,6 +551,13 @@ In the limit $z > R_\alpha$, it reduces to
   J_m\left( \beta \, kr \right) \, e^{i m \theta} ,
 \end{equation}
 where
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{lensphase}
+  \caption{The figure shows how the phase changes as we change the depth of the intermediate plane for projecting the hologram. At $z\gg R_{\alpha}$ the phase reduces to the phase profile of an axicon, which is the physical way to create a Bessel beam from a collimated beam of coherent light.}
+  \label{fig:axicon phase}
+\end{figure}
+
 \begin{equation}
   \beta
   =
@@ -509,8 +572,11 @@ The single-element mode converter,
   E_{\alpha,m}(\vec{r},f) \, e^{i \varphi_f(\vec{r})},
 \end{equation}
 has a phase profile that, in turn, reduces to the
-conical profile of an axicon in the long-range
+conical profile of an axicon as shown in Fig.~\ref{fig:axicon phase} 
+in the long-range
 limit, $z \gg R_\alpha$.
+
+
 An axicon's departure from the profile
 in Eq.~\eqref{eq:intermediatehologram}
 can reduce the mode purity and non-diffracting
@@ -520,22 +586,34 @@ their tips cannot be infinitely sharp.
 Rounding introduces mode artifacts that also reduce the 
 propagation-invariant range \cite{brzobohaty08}.
 
-
-\section{Determining Mode Purity}
+Another point to consider while choosing the optimum $z$
+is the rate of change of phase in plane $(r,\theta)$. For a 
+constant $r=R_0$ the maximum phase 
+$\varphi _{\mathrm{max}}\propto \frac{1}{z^2}$, which
+limits the ability to encode a phase in a phase only SLM 
+with finite sized pixels.
 
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.8\textwidth]{bsqfit.png}
-  \caption{blah blah blah blah.}
+  \caption{Higher order Bessel beams $J_{5}$,
+ $ J_{15}$,$ J_{25}$, and $J_{35}$ are created using 
+  intermediate plane holography for 
+  $z=\SI{54 }{\um}$. The black solid line is 
+  the best non-linear fit of the intensity distribution of
+  the Bessel beams. Perfect overlap of experimental and 
+  analytical solution suggests high mode purity of the
+  generated modes of light.}
   \label{fig:bessel quality}
 \end{figure}
 
+Figure.~\ref{fig:bessel quality} shows higher order Bessel
+beams created with a phase hologram computed from the 
+intermediate plane electric field at z=\SI{54}{\um}.
+The mode purity reduces as $m$ increases.
+
+
 \section{Volumetric Imaging}
-
-talk about off-centered image!
-
-
-
 
 Figure~\ref{fig:tractorbeams}(a) shows a volumetric
 rendering of a Bessel beam with $m = 0$ and
@@ -594,7 +672,7 @@ of equal-helicity Bessel beams:
 \end{equation}
 An example with $m = 0$, $\alpha = \SI{3.9}{\milli\radian}$
 and $\delta \alpha = \SI{4.9}{\milli\radian}$
-is presented in Fig.~\ref{fig:intermediate}(d) and Fig.~\ref{fig:tractorbeams}(b).
+is presented in Fig.~\ref{fig:intermediate}(c) and Fig.~\ref{fig:tractorbeams}(b).
 This beam's axial intensity profile is characterized by
 a periodic array of maxima spaced by
 $\Delta z = \lambda [\tan (\alpha + \delta\alpha) - \tan
@@ -621,7 +699,7 @@ by a factor of more than \num{e3}.
 
 Intermediate-plane holography is particularly useful for projecting
 more sophisticated superpositions of Bessel beams, such
-as the solenoidal wave presented in Fig.~\ref{fig:intermediate}(e) and
+as the solenoidal wave presented in Fig.~\ref{fig:intermediate}(d) and
 Fig.~\ref{fig:tractorbeams}(c).
 This two-beam superposition has the general form
 \begin{equation}
@@ -672,6 +750,8 @@ In that case, the resulting divergence angle is
 $\gamma = \tan^{-1}(1 - z/f)$. % XXX check sign
 Each superposed mode in such an element, furthermore, can have
 a different divergence angle.
+
+\section{Conclusion}
 
 Intermediate-plane holography is particularly useful for projecting
 modes whose ideal Fresnel holograms are dominated by large
