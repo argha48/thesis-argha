@@ -90,27 +90,24 @@ The time-dependent electric field of a generalized Bessel beam \cite{bouchal1996
 \label{eq:Jm_Bessel field}
 \vec{E}(\vec{r},t) = J_{m}(k \sin \alpha \vec{r})e^{im\theta}e^{ik\cos \alpha z}e^{-i\omega t} \quad ,
 \end{equation}
-
-where $J_m$ is the $\mathrm{m^{th}}$ order Bessel function of the first kind, where $m$ is an integer. $k = \sqrt{k^2_z + k^2_r} = \frac{2\pi}{\lambda}$ is  wavenumber, $r$, $\theta$ and $z$ are the radial, azimuthal and longitudinal components respectively. $\alpha$ is a parameter that can take any value beteween $0$ and $\pi$ included. The amplitude of the Bessel beam has azimuthal symmetry and Eq.~\eqref{eq:Jm_Bessel field} satisfy the condition of propagation-invariant beam:
+where $J_m (\cdot)$ is the $\mathrm{m^{th}}$ order Bessel function of the first kind, where $m$ is an integer. $k = \sqrt{k^2_z + k^2_r} = \frac{2\pi}{\lambda}$ is  the wavenumber of light, $r$, $\theta$ and $z$ are the radial, azimuthal and longitudinal coordinates respectively. $\alpha$ is a parameter that can take any value beteween $0$ and $\pi$ included. The amplitude of the Bessel beam has azimuthal symmetry and Eq.~\eqref{eq:Jm_Bessel field} satisfies the condition of propagation-invariant beam:
 
 \begin{equation}
 \label{eq:propagation invariant condition}
-I(r,z\geqslant 0) = I(r) \quad ,
+\frac{\partial}{\partial z}\vert \vec{E}(\vec{r},t)\vert ^2 = 0 \quad ,
 \end{equation}
-where $I$ is the transverse intensity of the beam.
 
- Apart from $m=0$ other Bessel beams carry orbital angular momentum which is unrelated to light's intrinsic linear and spin angular momentum. The amount of orbital angular momentum carried by individual photon is $m\hbar$, where $m$ is an integer that can take negative values as well. The Bessel beams are all cylindrically symmetric and they form the complete basis set of orthogonal functions for an arbitrary cylindrically symmetric, propagation-invariant beam of light. The identity relation of Bessel function:
- 
+Apart from $m=0$ other Bessel beams carry orbital angular momentum which is unrelated to light's intrinsic linear and spin angular momentum. The amount of orbital angular momentum carried by individual photon is $m\hbar$, where $m$ is an integer that can take negative values as well. The Bessel beams are all cylindrically symmetric and, as the solutions of the paraxial Helmholtz equation, they form the complete basis set of orthogonal functions for an arbitrary cylindrically symmetric, propagation-invariant beam of light. Bessel beams naturally can be related to other sets of solutions to the Helmholtz equation, including those with symmetries. For example, they can be projected on to the set of plane waves through the identity:
  \begin{equation}
  \label{eq:Bessel Identity relation}
  J_m(r) = \frac{i^{-m}}{2\pi} \int _{0}^{2\pi}e^{im\theta}e^{ir\cos \theta }d\theta
  \end{equation}
-garners our attention to an alternative interpretation of the Bessel beam of light. It can be decomposed into plane waves propagating at an angle that forms a cone shape. The vertex angle of the cone:
+The $m$th order Bessel beams thus can be a superposition of plane waves propagating at an angle that forms a cone centered around the optical axis. The vertex angle of the cone is related to the components of the wave vector through:
 \begin{equation}
 \label{eq:Bessel cone alpha}
-\alpha = \tan ^{-1}\frac{k_r}{k_z}\quad ,
+\alpha = \tan ^{-1} \left(\frac{k_r}{k_z}\right)\quad ,
 \end{equation}
-where $k_r$ and $k_z$ are radial and longitudinal wave-vectors respectively, determines the size of the center spot. The radius $r_0$ \cite{mcgloin2005} of the center spot is related to $\alpha$ through the relation:
+where $k_r$ and $k_z$ are radial and longitudinal wave-vectors respectively. This angle, in turn controls the radius $r_0$ \cite{mcgloin2005} of the Bessel beam's central maxima through the relation:
 \begin{equation}
 \label{eq:Bessel core spot size}
 r_0 = \frac{2.405}{k_z \tan \alpha}.
@@ -119,9 +116,9 @@ r_0 = \frac{2.405}{k_z \tan \alpha}.
 
 \subsection{Other Propagation-Invariant Modes}
 
-There are two other classes of beams that fall into the same category of propagation-invariant modes of light. The first one was first proposed by Gutiérrez-Vega \emph{et al.} \cite{Gutierrez-Vega:00} which is called ``Mathieu beam''. These modes of light are described by the radial and angular Mathieu functions. These are solution of the paraxial Helmholtz equation in the elliptical cylindrical coordinate system. The Mathieu beam of light propagates along elliptical trajectories. Another class of propagation-invariant mode is called ``Weber beam'' \cite{Bandres_2013}. Unlike Mathieu beams, Weber waves propagate in parabolic trajectories. Airy beam is a special case of such modes of light.
+Since the discovery of Bessel beams in 1987, two other classes of propagation invariant modes of light has been reported. The first, proposed by Gutiérrez-Vega \emph{et al.} \cite{Gutierrez-Vega:00}, is called ``Mathieu beam''. These modes of light are described by the radial and angular Mathieu functions and are solution of the paraxial Helmholtz equation in the elliptical cylindrical coordinate system. The Mathieu beam of light propagates along elliptical trajectories. Another class of propagation-invariant mode is called the ``Weber beam'' \cite{Bandres_2013}. Unlike Mathieu beams, Weber waves propagate in parabolic trajectories. Airy beams are a special case of such modes of light.
 
-These modes of light are also called accelerating modes of light due to their nonlinear path of propagation, which we talk in details in Ch.~\eqref{ch:accelerating}. While researchers have already experimentally created these mode of light, they are beyond the scope of this thesis because of their non-linear nature of propagation and difficult to create.
+Both Mathieu and Weber modes are described as accelerating modes of light because their intensity maxima trace out nonlinear paths. This remarkable property has excited considerable interest both for potential practical applications and also because such force free acceleration appears to violate conservation of momentum for light and Ehrenfest's theorem by analogy to quantum wave particles. These apparent anomalies are discusses and resolved in Chapter.~\eqref{ch:accelerating}.
 
 \section{Optical Tweezers}
 \begin{figure}[t!]
@@ -131,21 +128,22 @@ These modes of light are also called accelerating modes of light due to their no
   \label{fig:Optical tweezers}
 \end{figure}
 
-Optical tweezers can impart customizable forces on the trapped colloidal particles. The ability to focus a laser beam tightly, to the diffraction limit, offers us the control to effectively trap a dielectric particle at length scales ranging from few nanometers to millimeters. In 1986 Arthur Ashkin and his co-workers \cite{Ashkin:86} from Bell laboratories for the first time reported how a single beam can be tightly focused to create a strong gradient force to trap particles. Due to this pioneering experiment and his contribution in the field of optical tweezers Arthur Ashkin won the 2018 Nobel Prize in Physics\cite{nobel_media_2019}. Since the inception, many physicist and biologist have shown the versatility of this technique\cite{grier2003nature}. The optical force on a trapped object can be controlled at an $\sim 100 \mathrm{aN}$ precision between $\sim 1 \mathrm{pN}$ to a few $\sim 100\mathrm{pN}$ \cite{Rohrbach:02}. Such range of force is optimal for probing biological systems, ranging from single molecule biophysics to measuring responses in macromolecular systems\cite{Svoboda1994,Litvinov7426,Brouhard2003}. Svoboda \emph{et al.} \cite{Svoboda11782} has studied single molecules of the motor protein kinesin, moving under low mechanical loads at saturating ATP concentrations. Mondal \emph{et al.} \cite{argha2014} has discovered how weakly focused beam can be used for highly efficient axonal guidance in a non-invasive manner. Outside of biological applications, optical tweezers have been used in myriad of studies for example, to measure pair interaction potential of charge-stabilized colloid \cite{crocker1994}, for characterizing and tracking single colloidal particles \cite{Lee07colloid, Cheong2009, xiao2010, chen2015, chen2016}.
+Tweezers are beams of light that can trap microscopic objects in three dimensions. They are usually created by focusing a laser beam tightly, to the diffraction limit, thereby maximuzung the ability of intensity gradient forces to effectively localize a dielectric particle despite repulsive radiation pressure and other external forces. In 1986 Arthur Ashkin and his co-workers \cite{Ashkin:86} from Bell Laboratories reported their experimental discovery that a single focused beam can trap particles. Their explanation of this surprising observation launched the field of optical trapping. Due to this pioneering experiment and his contribution in the field of optical tweezers Arthur Ashkin was awarded the 2018 Nobel Prize in Physics \cite{nobel_media_2019}. Since the inception, many physicists and biologists have made excellent use of this versatile technique \cite{grier2003nature}. The optical force on a trapped object can be controlled at an \SI{100}{\mathrm{a}\newton} precision between roughly \SI{1}{\femto \newton} to as much as \SI{100}{\mathrm{p}\newton} \cite{Rohrbach:02}. Such range of forces is ideal for probing biological systems, ranging from single molecule biophysics to measuring responses in macromolecular systems \cite{Svoboda1994,Litvinov7426,Brouhard2003}. Svoboda \emph{et al.}  \cite{Svoboda11782} has used optical tweezers to study single molecules of the motor protein kinesin, moving under low mechanical loads at saturating ATP concentrations. Mondal \emph{et al.} \cite{argha2014} has discovered how weakly focused beam can be used for highly efficient axonal guidance in a non-invasive manner. Outside of biological applications, optical tweezers have been used in myriad of studies including measurements of pair interaction potential of charge-stabilized colloid \cite{crocker1994}, for characterizing and tracking single colloidal particles \cite{Lee07colloid, Cheong2009, xiao2010, chen2015, chen2016} and for probing nonequilibrium statistical physics [ADD REFERENCE]
 
 
 \section{Holographic Optical Trapping}
 \label{sec:HOT}
-In Holographic Optical tweezers the wavefront of a single light beam is modified using a computer generated hologram to create different mode structures. If you look back at Eq.~\eqref{eq:E_amp_phase} the optical field can be controlled either by changing the amplitude $u(\vec{r})$ or by modifying the phase $\phi (\vec{r})$. In our present setup we utilize a phase-only Spatial Light Modulator (SLM) \cite{Igasaki1999} to adjust the phase of the field in a plane as it is described in \cite{he1995, dufrense2001hot, CURTIS2002169, Grier:06, Polin:05}. A schematic of our experimental setup is shown in Fig.~\ref{fig:HOTsetup}
+
+As useful as optical tweezers have been, they have the limitation that one beam of light creates one trap and that trap can only act as a static potential energy well. Holographic Optical Traps (HOT) modifies the wavefront of a single light beam using a computer generated hologram to create different mode structures that focus into more general trapping patterns, including three dimensional arrangement of optical tweezers, optical vortices, Bessel beams and more. If you look back at Eq.~\eqref{eq:E_amp_phase} the optical field can be controlled either by changing the amplitude $u(\vec{r})$ or by modifying the phase $\phi (\vec{r})$. In our present setup we utilize a phase-only Spatial Light Modulator (SLM) \cite{Igasaki1999} to adjust the phase of the field in a plane as described in \cite{he1995, dufrense2001hot, CURTIS2002169, Grier:06, Polin:05}. A schematic of our experimental setup is shown in Fig.~\ref{fig:HOTsetup}
 
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.7\textwidth]{setup}
-  \caption{Schematic of HOT setup. Permission: copied from Bhaskar's thesis, will make my own}
+  \caption{Schematic of HOT setup. Permission: copied from Bhaskar's thesis, [MAKE YOUR OWN FIG]}
   \label{fig:HOTsetup}
 \end{figure}
 
-We use a linearly polarized laser at a wavelength of $532 \mathrm{nm}$ from Coherent Verdi $\mathrm{5W}$ as our trapping laser. The initial diameter of the laser beam is less than $2\mathrm{mm}$. It passes through a $\mathrm{5X}$ beam expander before it incidents on the phase-only SLM (Hamamatsu $\mathrm{X10468-16}$). The $5\mathrm{X}$ beam expander makes the beam uniform and overfills the aperture ($15.8\mathrm{mm}\times 12\mathrm{mm}$) of the SLM. The incident angle is maintained at less than $5\degree$ in order to retain the maximum light utilization efficiency ($96\%$) of the reflective SLM. The SLM has a $1920\times1080$ pixels liquid crystal screen which limits the resolution of the computer generated holograms that can be imprinted on the light field. The resultant light from the SLM then goes through a telescopic ($4-f$) system before going through the objective lens. Depending on trapping requirements, we use a high numerical aperture (NA) oil immersion objective (Nikon Plan-Apo 100X; NA 1.4). Finally the light is focused inside the sample chamber, which for our purpose consist of water solution of colloidal particle of $\sim 2\mathrm{\mu m}$ in diameter.
+We use a linearly polarized laser at a wavelength of \SI{532}{\nm} (Coherent Verdi $\mathrm{5W}$) as our trapping laser. The initial diameter of the laser beam is less than \SI{2}{\mm}. It passes through a 5\texttimes beam expander before it incidents on the phase-only SLM (Hamamatsu $\mathrm{X10468-16}$). The 5\texttimes beam expander makes the beam uniform and overfills the aperture (\SI{15.8}{\mm}\texttimes \SI{12}{\mm}) of the SLM. The incident angle is maintained at less than $8\degree$ in order to retain the maximum light utilization efficiency ($96\%$) of the reflective SLM. The SLM has a $1920\times1080$ pixel liquid crystal screen which limits the resolution of the computer generated holograms that can be imprinted on the light field. The resultant light from the SLM then goes through a telescopic ($4-f$) system before going through the objective lens. Depending on trapping requirements, we use a high numerical aperture (NA) oil immersion objective (Nikon Plan-Apo 100\texttimes; NA 1.4). Finally the light is focused inside the sample chamber, which for our purpose consist of aqueous colloid dispersion contained in glass microfluidic chambers.
 
 
 \section{Phase-Only Holograms}
@@ -153,20 +151,11 @@ We use a linearly polarized laser at a wavelength of $532 \mathrm{nm}$ from Cohe
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.75\textwidth]{fourier}
-  \caption{In order to create a specific mode of light with electric field $\vec{E}^{f}(\vec{\rho})$ on the sample plane using digital holography, we need to project a phase in the input hologram plane that will transform the Laser field into $\vec{E}^{in}(\vec{r})$. Due to the specific configuration of the setup shown in this schematic $\vec{E}^{f}(\vec{\rho}) = \mathcal{F}\lbrace E^{\mathrm{in}}(\vec{r}) \rbrace$.}
+  \caption{To create a specific mode of light with electric field $\vec{E}^{f}(\vec{\rho})$ on the sample plane using digital holography, we need to impose a phase pattern in the input hologram plane that will transform the laser field into $\vec{E}^{in}(\vec{r})$. Due to the specific configuration of the setup shown in this schematic $\vec{E}^{f}(\vec{\rho}) = \mathcal{F}\lbrace E^{\mathrm{in}}(\vec{r}) \rbrace$.}
   \label{fig:fourier}
 \end{figure}
 
-The experimental setup shown in Fig.~\ref{fig:HOTsetup} can be simplifed into Fig.~\ref{fig:fourier} in order to understand the relation between the optical field in the SLM plane and the field in the sample plane. In the paraxial limit the lens acts as a Fourier transform operator \cite{goodmanfourier}. The electric field in the focal plane ($E^{f}(\vec{\rho})$) of the objective lens is related to the field in the hologram plane ($E^{\mathrm{in}}(\vec{r})$) by:
-
-%\begin{equation}
-%\label{eq:fourier_relation}
-%\begin{split}
-%E^{f}(\vec{\rho}) & = -\frac{i}{\lambda f} \int dr^{2} E^{\mathrm{in}}(\vec{r}) \exp \left(-i\frac{k}{f}\vec{r}\cdot \vec{\rho}\right) \quad , \\
-% & \equiv \mathcal{F} \lbrace E^{\mathrm{in}}(\vec{r}) \rbrace
-%\end{split}
-%\end{equation}
-
+The experimental setup shown in Fig.~\ref{fig:HOTsetup} can be simplifed into Fig.~\ref{fig:fourier} in order to understand the relation between the optical field in the SLM plane and the field in the sample plane. In the paraxial limit, the lens acts as a Fourier transform operator \cite{goodmanfourier}. The electric field in the focal plane ($E^{f}(\vec{\rho})$) of the objective lens is related to the field in the hologram plane ($E^{\mathrm{in}}(\vec{r})$) by:
 \begin{subequations}
 \label{eq:fourier_relation}
 \begin{align}
@@ -179,19 +168,22 @@ The experimental setup shown in Fig.~\ref{fig:HOTsetup} can be simplifed into Fi
 \label{eq:inversefourier}
 E^{\mathrm{in}}(\vec{r})   = \mathcal{F}^{-1}\lbrace E^{f}(\vec{\rho})\rbrace
 \end{equation}
+where $f$ is the focal length of the objective lens and $\vec{r}$ and $\vec{\rho}$ are the position vectors on the hologram plane and on the focal plane respectively. Therefore, in order to obtain a desired electric field in the focal plane we need the inverse Fourier transformed electric field in the hologram plane. Now to get $E^{\mathrm{in}}(\vec{r})$ from the incident laser field, $E_{0}(\vec{r})\equiv u_{0}(\vec{r})e^{i\phi _{0}(\vec{r})}$ we need to modify both the amplitude and the phase of the input field in the hologram plane. While several research groups have devised ways to modify the amplitude profile \cite{Ando:09, Bagnoud:04, Liu:14, Wilson:07, vanPutten:08, zhu2014} using phase-only SLM, for our purpose such techniques do not improve the mode quality or diffraction efficiency by enough to justify the additional expense and complexity. 
 
-where $f$ is the focal length of the objective lens and $\vec{r}$ and $\vec{\rho}$ are the position vectors on the hologram plane and on the focal plane respectively. Therefore, in order to obtain a desired electric field in the focal plane we need the inverse Fourier transformed electric field in the hologram plane. Now to get $E^{\mathrm{in}}(\vec{r})$ from the incident laser field $E_{0}(\vec{r})\equiv u_{0}(\vec{r})e^{i\phi _{0}(\vec{r})}$ we need to modify both amplitude and the phase of the input field in the hologram plane. While several research groups have devised ways to modify the amplitude \cite{Ando:09, Bagnoud:04, Liu:14, Wilson:07, vanPutten:08, zhu2014} using phase-only SLM, for our purpose such techniques do not improve the mode quality by reasonable amount. Let us assume, in order to obtain the desired electric field $F^{r}(\vec{\rho})$ we need to transform incident laser field $E_{0}(\vec{r})$ into $E^{\mathrm{in}}(\vec{r}) = u^{\mathrm{in}}(\vec{r})\exp (ik\phi ^{\mathrm{in}}(\vec{r}))$ in the hologram plane. We overfill the SLM aperture in order to make the assumption $u_{0}(\vec{r}) = 1$. Using our phase-only SLM we can transform the phase of the incident field $\phi _{0}(\vec{r})$ into $\phi _{\mathrm{in}}(\vec{r})$. Therefore we end up with a residual electric field equal to the second term of Eq.\eqref{eq:extrafield}
-
+Let us assume, that to obtain the desired electric field $F^{r}(\vec{\rho})$ we need to transform the incident laser field $E_{0}(\vec{r})$ into $E^{\mathrm{in}}(\vec{r}) = u^{\mathrm{in}}(\vec{r})\exp (ik\phi ^{\mathrm{in}}(\vec{r}))$ in the hologram plane. We overfill the SLM aperture in order to achieve real uniform illumination $u_{0}(\vec{r}) = 1$. Using our phase-only SLM, we can transform the phase of the incident field $\phi _{0}(\vec{r})$ into $\phi _{\mathrm{in}}(\vec{r})$. Therefore we end up with a residual electric field equal to the second term of Eq.~\eqref{eq:extrafield}
 \begin{subequations}
 \label{eq:extrafield}
 \begin{align}
 e^{\phi _{\mathrm{in}}(\vec{r})} \quad = \quad & u^{\mathrm{in}}(\vec{r}) e^{ik\phi ^{\mathrm{in}}(\vec{r})} \\
 											&  + \left( 1- u^{\mathrm{in}}(\vec{r})\right) e^{ik\phi ^{\mathrm{in}}(\vec{r})}
 \end{align}
-\end{subequations} 
-
-In order to prevent any interference between these two terms in Eq.~\eqref{eq:extrafield} we deflect the desired light field by adding an additional phase ramp \cite{CURTIS2002169} equal to :
+\end{subequations}
+The first term on the right side of Eq.~\eqref{eq:extrafield} is the desired firld in the hologram plane. The second term represents additional light that is not in the desired mode. To prevent any interference between these two terms we deflect the desired light field by adding an additional phase ramp \cite{CURTIS2002169} equal to :
 \begin{equation}
 \phi _{\mathrm{disp}}(\vec{r}) = \frac{k}{f}\vec{\rho _{0}}\cdot \vec{r}
 \end{equation}
-to certain location.
+to position $\vec{\rho _{0}}$ in the trapping plane. The offset $\rho _{0}$ can be chosen to minimize any overlap between the intended trapping pattern and artifacts due to errors in the amplitude profile. More sophisticated algorithms can correct for amplitude errors by modifying the projected phase profile, trading off phase errors for diffraction efficiency, amplitude uniformity or other figures of merit. For the purpose of this thesis, simple displacement is sufficient and conserves high fidelity of the projected mode at the cost of minimal optimization of the displacement.
+
+
+
+
