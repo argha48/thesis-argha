@@ -1,38 +1,6 @@
 \chapter{Classically accelerating solenoidal wave packets in two dimensions}
 \label{ch:accelerating}
 
-\section{Strongly Localized Solenoidal Beam}
-Our goal is to have an electric field of the form:
-\begin{equation}\label{Eq: Green spiral}
-G(\mathbf{r}, z) = \delta (r-R)\delta (\theta - \theta_{0}(z)) e^{i\phi (\mathbf{r}, z)}
-\end{equation}
-, where $\theta_{0}(z) = \frac{z}{\gamma}$. Here $\gamma$ will define the pitch of the spiral. We also seek the Green's function to be of the form:
-\begin{equation}\label{Eq: Green w Bessel}
-G(\mathbf{r}, z) = \Sigma _{n=0}^{\infty}a_n \psi _{n}(\mathbf{r},z)
-\end{equation}
-, where $\psi_{n} (\mathbf{r}, z)$ are given by:
-\begin{equation}\label{Eq: Bessel fn}
-\psi_{n}(\mathbf{r}, z) = A_{n}J_{n}(k_{n}r \cos\alpha _n)e^{in\theta}e^{ik_{n}z\cos\alpha _n}
-\end{equation}
-, where $A_n$ is a normalization constant. Using $2$ forms of Green's function we obtain the coefficients $a_n$ in Eq.\ref{Eq: Green w Bessel}. 
-\begin{equation}\label{Eq: Green coeff}
-a_{n} = \frac{1}{A_n}R J_{n}(k_n R \sin\alpha _n)e^{-i k_n z \cos\alpha _n}e^{-in\frac{z}{\gamma}}e^{i\phi(R,z)}
-\end{equation}
-We want the coefficients $a_n$ to be $z$ independent. Therefore,
-\begin{equation}\label{Eq: phi reln.}
-\phi(R,z) = k_nz\cos\alpha _n + n\frac{z}{\gamma}
-\end{equation}
-So the final Green's function is given by:
-\begin{equation}\label{Eq: Green final}
-G(\textbf{r},z) = \Sigma _{n=0}^{\infty} J_n(k_n R \sin\alpha _n)J_{n}(k_n r \sin\alpha _n) e^{in\theta}e^{ik_n z\cos\alpha _n}
-\end{equation}
-
-Say, $k_i = k_j = k = \frac{2 \pi}{\lambda}$ and $\phi (R,z) = \phi _0 z$. Then 
-\begin{equation}\label{Eq: cos alpha}
-\cos\alpha _n = \frac{1}{k}(\phi _0 - \frac{n}{\gamma})
-\end{equation}
-\section{QM}
-
 
 In 1979, Balazs and Berry reported the discovery of
 shape-preserving wave packets for quantum mechanical particles
