@@ -4,106 +4,138 @@
 \section{Tractor Beam: A Special Case of  Non-Diffracting Waves}
 
 The term ``Tractor beam'' was coined in 1931 by Dr. Edward Smith, a chemist moonlighting as a science fiction author [ADD REFERENCE]. The term was popularized into a science fiction by writers of ``Star Trek'' in the 1960's. In all of those imagined realizations, a tractor beam is projected by a space ship to capture and transport distant objects back to the ship. 
-Ashkin and his coworkers \cite{block1992} appropriated the term in referring to their discovery of optical tweezers. Unlike their sci-fi counterparts, however, optical tweezers only pull objects upstream over a limited range, typically less than one micrometer. Beyond this range, radiation dominates the intensity gradient trapping force and blows illuminated objects downstream. True tractor beams are a class of optical modes which are traveling waves that transports objects back to its source, opposite to the direction of propagation. Following Eq.~\eqref{eq:Electric Lorentz force} the force field of a mode of light needs to satisfy the condition:
-
+Ashkin and his coworkers \cite{block1992} appropriated the term in referring to their discovery of optical tweezers. Unlike their sci-fi counterparts, however, optical tweezers only pull objects upstream over a limited range, typically less than one micrometer. Beyond this range, radiation dominates the intensity gradient trapping force and blows illuminated objects downstream. True tractor beams are a class of traveling waves that transport objects back to its source, opposite to the direction of propagation ideally along the entire length. Following Eq.~\eqref{eq:Electric Lorentz force} the force field of a mode of light needs to satisfy the condition:
 \begin{equation}
 \label{eq:Tractor Fz condition}
-\vec{F}_{z}\cdot \vec{z} <0
+\vec{F}_{z}\cdot \vec{\hat{z}} <0
 \end{equation}
-to become a tractor beam. It can impart a conservative force on the object towards the direction of the source.  In this sense an optical tweezers is not a tractor beam. In $2005 $ \v Ci\v zm\'ar \emph{et al.} \cite{cizmar2005} presented optical conveyor belt which can transport submicron objects over a distance of $\SI{250}{\um}$. Even though it has a long range of transportability, this mode of light ``is based on a standing wave (SW) created from two counter-propagating nondiffracting beams where the phase of one of the beams can be changed. \cite{cizmar2005}'' and therefore it is not a tractor beam by our definition. One sided tractor beam was experimentally demonstrated by Ruffner \emph{et al.} \cite{ruffner2012prl} which was created by coherently superposing coaxial Bessel beams.
+to be considered a tractor beam. In $2005 $ \v Ci\v zm\'ar \emph{et al.} \cite{cizmar2005} described optical conveyor belt which can transport micrometer scale objects bidirectionally over a distance of $\SI{250}{\um}$. Even though it has a long range of transport, this mode of light ``is based on a standing wave (SW) created from two counter-propagating nondiffracting beams where the phase of one of the beams can be changed'' \cite{cizmar2005}. Because the conveyor belt is not a travelling wave it is not a tractor beam by our definition. One sided tractor beams were experimentally demonstrated by Ruffner and Grier \cite{ruffner2012prl} in both cases by coherently superposing coaxial Bessel beams.
 
-Because Bessel functions form a complete set of orthogonal basis functions which are solutions to the paraxial Helmholtz equation, any propagation invariant or linear non-diffracting mode of light can be expressed as a linear superposition \cite{Ruffner:14, Lee:10, ruffner2012prl} of Bessel beams. In the force calculation for a single Bessel beam using Eq.~\eqref{eq:Electric Lorentz force} it is evident that the z-component of $\vec{F_e}(\vec{r})$:
+Because Bessel functions form a complete set of orthogonal basis functions which are solutions to the paraxial Helmholtz equation, any propagation-invariant or linear non-diffracting mode of light can be expressed as a linear superposition \cite{Ruffner:14, Lee:10, ruffner2012prl} of Bessel beams. In the force calculation for a single Bessel beam using Eq.~\eqref{eq:Electric Lorentz force} it is evident that the $\vec{z}$-component of $\vec{F_e}(\vec{r})$ satisfies the propagation invariance because
 \begin{equation}
 \label{eq:Single Bessel gradient force}
-\partial _{z} \sum ^{j=2}_{j=0} u_{j}^2(\vec{r}) = 0
+\partial _{z} \sum ^{j=2}_{j=0} u_{j}^2(\vec{r}) = 0 \quad .
 \end{equation}
-as the transverse intensity distribution remains unchanged for a Bessel beam. For a pure dielectric particle, which does not absorb light the second term in Eq.~\eqref{eq:Electric Lorentz force} is also $0$ because $\alpha _{e}^{\prime \prime} = 0$. Even for absorbing particles with $\alpha _{e}^{\prime \prime} > 0$ the second term 
+Conventional materials radiate light even if they do not otherwise absorb it and so have $\alpha _{e}^{\prime \prime} > 0$. This means that the second term in Eq.~\eqref{eq:Electric Lorentz force},
 \begin{equation}
 \label{eq:Single Bessel 2nd term}
 \alpha _{e}^{\prime\prime}\sum ^{2}_{j=0} u_{j}^2(\vec{r}) \partial _{z}\phi _{j}(\vec{r}) >0
 \end{equation}
-is non-negative. Therefore a single Bessel beam cannot act as a tractor beam as it is evident from the force calculation using Eq.~\eqref{eq:Electric Lorentz force}. However, it is possible to construct a mode of light by superposing different Bessel beams which can act as a long range propagation-invariant tractor beam that will pull objects upstream towards the source of light. The simplest superposition will be two Bessel beams with the similar axis of symmetry and are mutually coherent. The electric field of such a superposed mode of light:
-
+is non-negative. On this basis we conclude that a single Bessel beam cannot act as a tractor beam for small particles at least not at the dipole order. Even so, it is possible to construct a superposition Bessel beams which can act as a long range propagation-invariant tractor beam. The simplest such superposition consists of two Bessel beams
 \begin{equation}
 \label{eq:two bessel superposition E}
 E(\vec{r}, \theta) = a_{1} E_{\alpha, m}(\vec{r},\theta) + a_{2} E_{\alpha ^{\prime},m^{\prime}}(\vec{r},\theta) \quad ,
 \end{equation}
-where $a_1$, $a_2$ are arbitrary scalar amplitudes, $\alpha$,$\alpha ^{\prime}$ are two different convergence angles, and $m$,$m^{\prime}$ characterizes orbital angular momentum of different order Bessel beams.
+where the amplitudes $a_1$ and $a_2$, convergence angles $\alpha$ and $\alpha ^{\prime}$, and winding numbers $m$ and $m^{\prime}$ determine the structure and capabilities of the superposition. Because each of the component Bessel beams is propagation invariant, the superposition is as well. We will focus on two classes of two-component superposition to illustrate how two  waves can create a tractor beam.
 
 
 \subsection{Conveyor Beam}
-Following Eq.~\eqref{eq:two bessel superposition E}, an optical Conveyor beam is a superposition of two $0$th order Bessel beams i.e. $m=m^{\prime} = 0$. While the superposing Bessel beams do not carry any orbital angular momentum, due to different convergence angles, $\alpha$, $\alpha ^{\prime}$ they interfere and create a periodic amplitude maximum and minimum along the axis of symmetry. If $a_1 = a_2 = 1$ the electric field along the axis ($\vec{r}=0$) becomes a periodic function:
-
+Following Eq.~\eqref{eq:two bessel superposition E}, an optical conveyor beam is a superposition of two $0$th order Bessel beams, $m=m^{\prime} = 0$. In this case the component Bessel beams differ only in that convergence angles, $\alpha$ and $\alpha ^{\prime}$. They then interfere to create a periodic amplitude profile along the axis of symmetry. If $a_1 = a_2 = 1$, the electric field along the axis ($\vec{r}=0$) is maximally modulated. The associated intensity profile
 \begin{equation}
 \label{eq:conveyor electric field axis}
-E(z) = 2 \cos \left( kz\frac{\cos \alpha - \cos \alpha ^{\prime}}{2}\right) \exp \left( ikz \frac{\cos \alpha + \cos \alpha ^{\prime}}{2}\right) \quad ,
+\vert E(z) \vert ^2 = 4 \cos ^2 \left( kz\frac{\cos \alpha - \cos \alpha ^{\prime}}{2}\right) \exp ^2 \left( ikz \frac{\cos \alpha + \cos \alpha ^{\prime}}{2}\right) \quad ,
 \end{equation}
-where the alternative bright and dark spots occur at a period of:
+has alternating maxima and minima separated by:
 \begin{equation}
 \label{eq:conveyor period}
-\vartriangle z = \frac{2\pi}{k \left( \cos \alpha - \cos \alpha ^{\prime}\right)} \quad .
+\delta z = \frac{2\pi}{k \left( \cos \alpha - \cos \alpha ^{\prime}\right)} \quad .
 \end{equation}
-Particles can be trapped in each on the array of intensity maximums and and transported upstream or downstream along the axis of the conveyor beam by selectively altering the relating phase of the interfering Bessel beams. The axial transport velocity of the trapped particle depends on the rate of change in the relative phase of the two Bessel beams, which can be written as:
+Particles can be trapped in each on the array of intensity maxima and and transported upstream or downstream along the axis of the conveyor beam by selectively altering the relative phase of the interfering Bessel beams. The axial transport velocity of the trapped particle depends on the rate of change in the relative phase of the two Bessel beams, which can be written as:
 \begin{equation}
 \label{eq:conveyor velocity}
-v(t) = \frac{\vartriangle z}{2\pi}\frac{\partial \phi (t)}{\partial t} \quad ,
+v(t) = \frac{\delta z}{2\pi}\frac{\partial \phi (t)}{\partial t} \quad ,
 \end{equation}
 where $\phi (t)$ is the time dependent change in phase difference between the two interfering Bessel beams. A detailed force calculation was reported in \cite{ruffner2012prl} and it suggests conveyor beam can act as a tractor beam irrespective of a particle's characteristics. While particles with refractive index relative to the medium greater than one will be trapped in the intensity maximum, dark-seeking i.e. particles whose relative refractive index is less than one, will find the local intensity minimum as the stable point.
 
 
 \subsection{Solenoidal Beam}
-A solenoid beam is where the intensity maximum spirals around the axis of propagation. Similar to a conveyor beam it is a solution of the Helmholtz equation in the paraxial limit and it is a superposition of multiple Bessel beams. The spiraling intensity profile of a solenoid beam is discreetly propagation invariant mode of light along its axis of propagation, which can be written as:
-\begin{equation}
-\label{eq:discreet propagation invariant}
-I\left(\vec{r},\theta, z\right) = I\left(\vec{r},\theta, z+\vartriangle z\right) \quad ,
-\end{equation}
-but the radial intensity profile remains unchanged in the spiraling frame of reference \cite{Tervo01}. First experimental realization of a solenoid beam presented in \cite{Lee:10} describes it as a superposition of a finite series of Bessel beams given by:
+Most common laser modes are bright along the axis and so broadly resemble cylinder. A solenoid beam by contrast has an  intensity maximum that spirals around the axis of propagation. Solenoid beams are similar to optical conveyor in that they are solutions of the Helmholtz equation in the paraxial limit and  can be expanded as a superposition of Bessel beams. The first experimentally realized solenoid beam, presented in \cite{Lee:10} involved a fairly complex superposition:
 \begin{equation}
 \label{eq:lee solenoid bessel sum}
 \vec{E}_{\gamma, l}(\vec{r},z) = \sum ^{[l]}_{m=[l-\gamma k]}\frac{l-m}{\gamma ^2}J_{m}(q_m R)e^{i\frac{l-m}{\gamma}z}e^{im\theta}J_{m}(q_m r) \quad ,
 \end{equation}
-where $\gamma$ is the pitch of the spiral intensity profile and $R$ is the radius. Figure.~\ref{fig:solenoid wavefronts} shows how the wavefronts update with changing helical pitch $l$ from Eq.~\eqref{eq:lee solenoid bessel sum}. For $l<0$ (e.g.~Fig.~\ref{fig:solenoid wavefronts}(c) where $l=-40$) the phase gradient force acts as a pulling force which moves trapped objects upstream.
+where $\gamma$ is the pitch of the spiral intensity profile and $R$ is the radius. [XXXXXXX ADD FIG FROM LEE PAPER]
+The spiraling intensity profile of a solenoid beam is discreetly propagation invariant mode of light along its axis of propagation, which can be written as:
+\begin{equation}
+\label{eq:discreet propagation invariant}
+I\left(\vec{r},\theta, z\right) = I\left(\vec{r},\theta, z+\vartriangle z\right) \quad ,
+\end{equation}
+but the radial intensity profile remains unchanged in the spiraling frame of reference \cite{Tervo01}. Figure.~\ref{fig:solenoid wavefronts} shows how the wavefronts update with changing helical pitch $l$ from Eq.~\eqref{eq:lee solenoid bessel sum}. For $l<0$ (e.g.~Fig.~\ref{fig:solenoid wavefronts}(c) where $l=-40$) the phase gradient force acts as a pulling force which moves trapped objects upstream.
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.8\textwidth]{lee2010opex}
   \caption{Retrograde forces in a helical solenoid beam. The local wave vector k is normal to the light's wavefronts, with a component in the $\hat{z}$ direction. (a) $l = +40$: $\vec{k}$ is directed along the solenoid, resulting in a downstream phase-gradient force. (b) $l = 0$: Wavefronts are parallel to the solenoid so that k is everywhere normal to the spiral. Particles trapped by intensity-gradient forces experience no net force. (c) $l = -40$: A component of $\vec{k}$ is directed back down the spiral. A particle confined to the spiral therefore moves upstream. Source: Reprinted with permission from \cite{Lee:10}.}
   \label{fig:solenoid wavefronts}
 \end{figure}
-However, the simplest superposition of two coherent Bessel beams like in Eq.~\eqref{eq:two bessel superposition E} can also generate a solenoidal beam. These two Bessel beams interfere coherently and produce intensity maximum wherever the following condition is satisfied:
+
+
+A far simple superposition of two coherent Bessel beams also generate a solenoidal beam. The condition  for spiraling interference is met when
 \begin{equation}
 \label{eq:solenoid superposition bessel phase}
 \left( m\theta + k\cos \alpha z \right) -\left(m^{\prime}\theta + k\cos \alpha ^{\prime} z \right) = 2n\pi \quad ,
 \end{equation}
-where $n$ is a non-negative integer. The intensity maximum traces a helical path which can be presented in the azimuthal axis as a function of axis of propagation $z$ as:
+where $n$ is a non-negative integer. The intensity maximum traces a spiral path that can be described in the cylindrical coordinates as a function of axis of propagation $z$ as:
 \begin{equation}
 \label{eq:screw function}
 \theta _{0}(z) = \frac{kz\left( \cos \alpha - \cos \alpha ^{\prime}\right)}{m-m^{\prime}} .
 \end{equation}
-By changing the orbital angular momentum ($m$,$m^{\prime}$) or the angle of convergence ($\alpha$,$\alpha ^{\prime}$) of individual Bessel beams we can control pitch ($\gamma$) and radial distance of the intensity maximum of a solenoid beam. For an example, if we wish to create a solenoid beam with intensity maximum at $r=R$ which is formed due to superposition of  $\nu$-th maximum of $J_m$ and $\nu ^{\prime}$-th maximum of $J_{m^{\prime}}$ we need to ensure
+By changing the topological charges ($m$,$m^{\prime}$) or the angle of convergence ($\alpha$,$\alpha ^{\prime}$) of individual Bessel beams, we can control pitch the ($\gamma$) and radius of the  solenoid's intensity maximum. For  example, if we wish to create a solenoid beam with intensity maximum at $r=R$ which is formed for to superposition of  the $\nu$-th maximum of $J_m$ and the $\nu ^{\prime}$-th maximum of $J_{m^{\prime}}$ we need to ensure that
 \begin{equation}
 \label{eq:bessel maximum match condition}
 \frac{\sin \alpha}{j^{\prime}_{m,\nu}} 
 		= \frac{\sin \alpha ^{\prime}}{j^{\prime}_{m^{\prime},\nu ^{\prime}}} 
 		= \frac{1}{kR} \quad ,
 \end{equation}
-where $x=j^{\prime}_{m,\nu}$ is the $\nu$-th root of $J^{\prime}_{m}\left( x\right)=0$. In this simplistic model, the value of $\gamma$(introduced in Eq.~\eqref{eq:lee solenoid bessel sum}) is:
+where $x=j^{\prime}_{m,\nu}$ is the $\nu$-th root of $J^{\prime}_{m}\left( x\right)=0$. In this case, the value of $\gamma$ is:
 \begin{equation}
 \label{eq:simple solenoid pitch}
 \gamma = \frac{2\pi}{k}\frac{m-m^{\prime}}{\cos \alpha - \cos \alpha ^{\prime}}
 \end{equation}
-and there are $|m-m^{\prime}|$ maxima in the transverse intensity profile. In Eq.~\eqref{eq:simple solenoid pitch} modifying either numerator or denominator in a way to change the overall sign of $\gamma$ will change the circular handedness of the helical solenoid beam. The intensity maximum at $r=R$ generates a intensity gradient force which pulls objects towards the spiral potential minimum and creates a effective optical trapping in the radial direction. Phase gradient propels the particle in the axial direction. Under this
+and there are $|m-m^{\prime}|$ maxima in the transverse intensity profile. Modifying either the numerator or the denominator in Eq.~\eqref{eq:simple solenoid pitch} to change the overall sign of $\gamma$ will change the chirality of the helical solenoid beam. The intensity maximum at $r=R$ generates an intensity-gradient force that pulls objects towards the spiral which therefore acts as an extended optical trap. Phase gradients propel trapped particles in the axial direction. For the special case
 \begin{equation}
 \label{eq:solenoid tractor condition}
-m^{\prime}\cos \alpha > m \cos \alpha ^{\prime}
+m^{\prime}\cos \alpha > m \cos \alpha ^{\prime} \quad ,
 \end{equation}
-constraint, the solenoid beam acts as a tractor beam which also makes $\nu^{\prime} > \nu$ a necessary condition for retrograde force. Conditions from Eq.~\eqref{eq:bessel maximum match condition} and Eq.~\eqref{eq:solenoid tractor condition} can be used to find out
+the solenoid beam acts as a tractor beam. This also makes $\nu^{\prime} > \nu$ a necessary condition for the superposition to exert a retrograde force. Conditions from Eq.~\eqref{eq:bessel maximum match condition} and Eq.~\eqref{eq:solenoid tractor condition} combined to obtain the overall condition
 \begin{equation}
 \label{eq:convergence angle limit}
 \sin ^{2} \alpha < \frac{\left(\frac{m^2}{m^{\prime ^{2}}}-1\right)}{\left(\frac{m^2}{m^{\prime ^{2}}} - \frac{j_{m,\nu}^{\prime ^{2}}}{j^{\prime ^{2}}_{m^{\prime},\nu ^{\prime}}}\right)}
 \end{equation}
- in order for the beam of light to act as a tractor beam.
+ for the beam of light to act as a tractor beam. This previously unpublished result defines the class of dipole-order tractor beams that can be constructed from superposition if pairs of Bessel beam.
 
 
+\subsection{Strongly Localized Solenoidal Beam}
+
+The two component solenoid is conceptually simple, but not optimal for transporting objects. More sophisticated superposition of Bessel beam can embrace the intensity and phase gradient required for tractor beam operation. Ideally the  electric field in a solenoidal tractor beam would have the form:
+\begin{equation}\label{eq:Green spiral}
+G(\mathbf{r}, z) = \delta (r-R)\delta (\theta - \theta_{0}(z)) e^{i\phi (\mathbf{r}, z)} \quad ,
+\end{equation}
+where $\theta_{0}(z) = \frac{z}{\gamma}$. Here $\gamma$ will define the pitch of the spiral. We also seek the Green's function to be of the form:
+\begin{equation}\label{eq:Green w Bessel}
+G(\mathbf{r}, z) = \Sigma _{n=0}^{\infty}a_n \psi _{n}(\mathbf{r},z) \quad ,
+\end{equation}
+where $\psi_{n} (\mathbf{r}, z)$ are given by:
+\begin{equation}\label{Eq: Bessel fn}
+\psi_{n}(\mathbf{r}, z) = A_{n}J_{n}(k_{n}r \cos\alpha _n)e^{in\theta}e^{ik_{n}z\cos\alpha _n} \quad ,
+\end{equation}
+where $A_n$ is a normalization constant. Combining Eq.~\eqref{eq:Green spiral} and Eq.~\eqref{eq:Green w Bessel} we obtain the coefficients $a_n$ in Eq.\ref{Eq: Green w Bessel}. 
+\begin{equation}\label{Eq: Green coeff}
+a_{n} = \frac{1}{A_n}R J_{n}(k_n R \sin\alpha _n)e^{-i k_n z \cos\alpha _n}e^{-in\frac{z}{\gamma}}e^{i\phi(R,z)} \quad .
+\end{equation}
+We want the coefficients $a_n$ to be independent of $z$. Therefore,
+\begin{equation}\label{Eq: phi reln.}
+\phi(R,z) = k_nz\cos\alpha _n + n\frac{z}{\gamma} \quad .
+\end{equation}
+So the final Green's function is given by:
+\begin{equation}\label{Eq: Green final}
+G(\textbf{r},z) = \Sigma _{n=0}^{\infty} J_n(k_n R \sin\alpha _n)J_{n}(k_n r \sin\alpha _n) e^{in\theta}e^{ik_n z\cos\alpha _n}
+\end{equation}
+
+Choosing, $k_i = k_j = k = \frac{2 \pi}{\lambda}$ and $\phi (R,z) = \phi _0 z$ we obtain 
+\begin{equation}\label{Eq: cos alpha}
+\cos\alpha _n = \frac{1}{k}(\phi _0 - \frac{n}{\gamma}) \quad .
+\end{equation}
+This expression meets the same design criteria that was seen in \cite{lee10} but has the benefit of faster convergence and thus better performance in practice.
 
 \section{Projecting Bessel Beam with \\ Digital Hologram}
 \label{sec:Project Bessel Hologram}
@@ -111,7 +143,7 @@ constraint, the solenoid beam acts as a tractor beam which also makes $\nu^{\pri
 Holograms intended for optical micromanipulation typically are designed to modify the phase profile of an incident laser beam, but not the amplitude. The phase-only hologram then propagates to a converging lens that transforms it into the intended mode. Scalar diffraction theory approximates this transformation as a Fourier transform \cite{goodman05} as described in described in Sec.~\ref{sec:HOT} and Sec.~\ref{sec:PhaseHOT}. Difficulties are encountered when the Fourier transform of the desired mode features amplitude variations that can not be encoded naturally in a phase-only diffractive optical element.
 
 For example, the ideal complex-valued hologram encoding 
-an $m$-th order Bessel beam as mentioned in Eq.~\eqref{eq:Jm_Bessel field}, the input electric field on the hologram plane has to be same as Eq.~\eqref{eq:inversefourier} which takes the form of an infinitesimally fine ring,
+an $m$-th order Bessel beam takes the form of an infinitesimally fine ring,
 \begin{equation}
   \label{eq:besselhologram}
   E_{\alpha,m}(\vec{r},0)
@@ -123,7 +155,7 @@ whose radius,
 \label{eq:Ralpha}
 R_{\alpha} = f \, \tan \alpha \quad ,
 \end{equation}
-depends on the focal length of the projecting lens, $f$ as shown in the schematic Fig.~\ref{fig:fourier}, and the desired convergence angle of the Bessel beam, $\alpha$. $\alpha$ is correlated with the center spot size and propagation invariant range of the Bessel beam as discussed in Sec.~\ref{subsec:Bessel Beam}.
+depends on the focal length of the projecting lens, $f$, and the desired convergence angle of the Bessel beam, $\alpha$. 
 Equation~\eqref{eq:besselhologram} expresses the
 scalar field in terms of the two-dimensional
 polar coordinates, $\vec{r} = (r,\theta)$, in the plane $z = 0$.
@@ -182,7 +214,7 @@ a range of convergence angles.
 Interference among these superposed modes
 causes periodic axial intensity variations,
 and so limits the propagation-invariant
-range of the superposition \cite{ruffner12a} as shown in Fig.~\ref{fig:previous bessel hologram}(b). Figure.~\ref{fig:previous bessel hologram}(d) shows a conveyor beam created by using a digital hologram that encodes two Bessel beam as a ring with certain thickness. Using this method constraints the propagation invariant range to the order of \SI{100}{\um}
+range of the superposition \cite{ruffner12a} as shown in Fig.~\ref{fig:previous bessel hologram}(b). Figure.~\ref{fig:previous bessel hologram}(d) shows a conveyor beam created by using a digital hologram that encodes two Bessel beam as a ring with certain thickness. Using this method constrain the propagation-invariant range to the order of \SI{100}{\um}
 
 \begin{figure}[t!]
   \centering
@@ -207,21 +239,22 @@ poor mode fidelity and extremely poor diffraction efficiency.
 
 \section{Intermediate Plane Holography}
 
-Structuring laser beams with computer-generated holograms
-has created revolutionary opportunities for
-optical micromanipulation \cite{grier03} and
-optical communication \cite{gibson04,bozinovic13,willner15}.
-Using holograms to project propagation-invariant modes of light,
-for example, has led to the remarkable
-discovery that some non-diffracting modes
-can act as tractor beams, pulling illuminated objects
-upstream rather than trapping them or pushing them downstream
-\cite{marston06,lee10}.
-Applications of tractor beams and other exotic light modes have
-been hampered by the poor diffraction efficiency of the
-holograms used to project them, which can be less
-than \num{e-3} \cite{ruffner12a,ruffner14}.
-To address this problem, we introduce intermediate-plane
+%Structuring laser beams with computer-generated holograms
+%has created revolutionary opportunities for
+%optical micromanipulation \cite{grier03} and
+%optical communication \cite{gibson04,bozinovic13,willner15}.
+%Using holograms to project propagation-invariant modes of light,
+%for example, has led to the remarkable
+%discovery that some non-diffracting modes
+%can act as tractor beams, pulling illuminated objects
+%upstream rather than trapping them or pushing them downstream
+%\cite{marston06,lee10}.
+%Applications of tractor beams and other exotic light modes have
+%been hampered by the poor diffraction efficiency of the
+%holograms used to project them, which can be less
+%than \num{e-3} \cite{ruffner12a,ruffner14}.
+
+To address these problem, we introduce intermediate-plane
 holography, which can dramatically improve
 both diffraction efficiency and mode purity.
 We illustrate these capabilities by projecting
@@ -237,87 +270,6 @@ diffraction efficiency relative to the standard holographic optical
 trapping technique, and a
 \num{100}-fold increase in non-diffracting range.
 
-%Holograms intended for optical micromanipulation typically
-%are designed to modify the phase profile of an incident laser beam,
-%but not the amplitude.
-%The phase-only hologram then propagates to a converging
-%lens that transforms it into the intended mode.
-%Scalar diffraction theory approximates this transformation
-%as a Fourier transform \cite{goodman05}.
-%Difficulties are encountered when the Fourier transform of
-%the desired mode features amplitude variations
-%that can not be encoded naturally in a phase-only diffractive optical element.
-%
-%For example, the ideal complex-valued hologram encoding 
-%an $m$-th order Bessel beam takes the form of an infinitesimally
-%fine ring,
-%\begin{equation}
-%  \label{eq:besselhologram}
-%  E_{\alpha,m}(\vec{r},0)
-%  =
-%  \delta(r - R_\alpha) \, e^{i m\theta},
-%\end{equation}
-%whose radius, $R_\alpha = f \, \tan\alpha$,
-%depends on the focal length of the projecting lens, $f$,
-%and the desired convergence angle of the Bessel
-%beam, $\alpha$.
-%Equation~\eqref{eq:besselhologram} expresses the
-%scalar field in terms of the two-dimensional
-%polar coordinates, $\vec{r} = (r,\theta)$, in the plane $z = 0$.
-%More generally, $E_{\alpha,m}(\vec{r},z)$ describes the
-%transverse profile of the same field at axial position $z$.
-%
-%The ideal ring hologram consists of an amplitude mask, shown
-%schematically in
-%Fig.~{fig:intermediate}(a),
-%that only allows light to pass through the thin annulus at radius
-%$R_\alpha$, and a phase mask that imposes a helical pitch on the
-%transmitted wavefronts.
-%The same effect can be achieved with a
-%phase-only hologram,
-%\begin{equation}
-%  \label{eq:idealbesselhologram}
-%  \varphi_{\alpha,m}(\vec{r})
-%  =
-%  \begin{cases}
-%    m \theta \bmod 2 \pi, & r = R_\alpha \\
-%    \varphi_0(\vec{r}), & \text{otherwise}
-%  \end{cases}
-%\end{equation}
-%where $\varphi_0(\vec{r})$ is an unspecified
-%phase function that diverts light away from the
-%axis \cite{roichman06}.
-%
-%Equation~\eqref{eq:idealbesselhologram}
-%poses two substantial problems for standard
-%holographic trapping implementations
-%of the kind represented in Fig.~\ref{fig:intermediate}(a).
-%In the first place, the delta-function
-%amplitude profile in the hologram plane cannot be encoded
-%faithfully on a pixelated diffractive optical element.
-%The bright ring in Fig.~\ref{fig:intermediate}(a) represents
-%the intensity,
-%$I(\vec{r},0) = \left\vert  E_{\alpha,0}(\vec{r},0)\right\vert^2$,
-%projected by an $m = 0$ ring hologram, treated as an
-%ideal amplitude mask.
-%The ring's finite thickness arises from the mask's
-%finite pixel size.
-%Rather than projecting a wave with a single value of $\alpha$,
-%this finite-thickness ring constitutes a superposition of
-%ring holograms that corresponds to a
-%superposition of Bessel beams with
-%a range of convergence angles.
-%Interference among these superposed modes
-%causes periodic axial intensity variations,
-%and so limits the propagation-invariant
-%range of the superposition \cite{ruffner12a}.
-%In the second place, only a few pixels in
-%the hologram plane contribute to the intended Bessel beam.
-%The rest of the hologram's area is dedicated to the
-%phase function $\varphi_0(\vec{r})$ that diverts
-%extraneous light away from the desired mode.
-%Pixelated ring holograms thus suffer from a combination of
-%poor mode fidelity and extremely poor diffraction efficiency.
 
 \begin{subequations}
 \label{eq:intermediatebesselhologram}
@@ -465,12 +417,10 @@ whose phase is the first-order approximation to the
 intermediate-plane phase hologram encoding the Bessel beam.
 The upper limit of integration in Eq.~\eqref{eq:radialintegral}
 ignores exponentially small contributions from terms with
-$q > k$ because $kz \gg 1$ in practice. Due to unknown solution of
-the integral form in Eq.~\eqref{eq:radialintegral} we switch to the inverse Fourier
-Cartesian coordinate space as used in the Fresnel approximation of 
-Rayleigh-Sommerfeld equation in Eq.~\eqref{eq:fresnel_diffraction}. Unlike far field
-approximation pointed out in Eq.~\eqref{eq:fraunhofer_approx} this approximation is
-not valid in intermediate-plane holography. The idea is to retain as much information
+$q > k$ because $kz \gg 1$ in practice. 
+
+The integral in Eq.~\eqref{eq:radialintegral} appears not to have a known solution in closed form. We therefore adopt the same approximation scheme use in dividing the Rayleigh Sommerfeld propagator.
+The idea is to retain as much information
 as possible while reducing the rate of amplitude modulation so that the second term 
 in Eq.~\eqref{eq:extrafield} is small or negligible.
 
@@ -481,14 +431,14 @@ in Eq.~\eqref{eq:extrafield} is small or negligible.
   \label{fig:intermediate field schema}
 \end{figure}
 Following the schematic in Fig.~\ref{fig:intermediate field schema}, 
-the electric field on plane $z=z$ will be,
+the electric field at axial position $z$ will be
 \begin{equation}
 \label{eq:intermediate field a}
 U(x,y,z) = \frac{i}{\lambda}\int _{x^{\prime},y^{\prime}}U(x^{\prime},y^{\prime},0)
 					\cos \phi ^{\prime} \frac{\exp 
 					\left( ik\ell \right)}{\ell}dx^{\prime}dy^{\prime} \quad .
 \end{equation}
-$\cos\theta^{\prime}$ can be written in terms of $z$ and $\ell$ as 
+$\cos\phi ^{\prime}$ can be written in terms of $z$ and $\ell$ as 
 \begin{equation}
 \cos \phi ^{\prime} = \frac{z}{\ell}
 \end{equation}
@@ -499,7 +449,7 @@ U(x,y,z) = \frac{i}{\lambda}\int _{x^{\prime},y^{\prime}}U(x^{\prime},y^{\prime}
 					\frac{z}{\ell ^2} \exp 
 					\left( ik\ell \right)dx^{\prime}dy^{\prime} \quad .
 \end{equation}
-In Cartesian coordinate $\ell$ can be written as:
+In Cartesian coordinate, $\ell$ can be written as:
 \begin{equation}
 \label{eq:ell in cartesian}
 \ell ^2 = (x-x^{\prime})^{2} + (y-y^{\prime})^{2} + z^{2} \quad ,
@@ -511,13 +461,13 @@ Eq.~\eqref{eq:ell in cartesian} in terms of $\rho$ as
 l = \rho - \frac{xx^{\prime}+yy^{\prime}}{\rho} + \frac{x^{\prime^{2}} + y^{\prime^{2}}}{2\rho}
 			+ \mathcal{O}\lbrace \frac{x^2x^{\prime ^{2}}}{\rho ^3},\frac{y^2y^{\prime ^{2}}}{\rho ^3} \rbrace
 \end{equation}
-Moving to polar coordinate from Cartesian coordinate such that
+Moving to polar coordinates from Cartesian coordinates such that
 \begin{subequations}
 \begin{equation}
-\left( x^{\prime},y^{\prime}\right) \equiv \left( \eta , \phi \right) \quad ,
+\left( x^{\prime},y^{\prime}\right) \longrightarrow \left( \eta , \phi \right) \quad ,
 \end{equation}
 \begin{equation}
- \left( x,y\right) \equiv \left(r , \theta \right) \quad ,
+ \left( x,y\right) \longrightarrow \left(r , \theta \right) \quad ,
 \end{equation}
 \end{subequations}
 we can rewrite Eq.~\eqref{eq:intermediate field b} as
@@ -525,17 +475,17 @@ we can rewrite Eq.~\eqref{eq:intermediate field b} as
 \label{eq:intermediate field c}
 U(r ,\theta) = \frac{i}{\lambda} \frac{z}{\rho ^2}\int U(\eta ,\phi)\exp \left[ -\frac{ik}{\rho}\left( r \eta \cos (\theta - \phi) - \eta ^2 \right)\right]d^2\eta
 \end{equation}
-In order to produce a Bessel beam in $(r,\theta)$ plane we need 
+To produce a Bessel beam in the $(r,\theta)$ plane we need 
 \begin{equation}
 \label{eq:delta field}
 U(\eta , \phi) = \delta (\eta - R_{\alpha}) \quad ,
 \end{equation}
-where $R_{\alpha}$ is the radius of the delta ring similar to what is mentioned in Eq.~\eqref{eq:besselhologram}. Replacing $U(\eta ,\phi)$ with Eq.~\eqref{eq:delta field} in Eq.~\eqref{eq:intermediate field c} yields:
+where $R_{\alpha}$ is the radius of the infinitesimal ring similar to what is mentioned in Eq.~\eqref{eq:besselhologram}. Replacing $U(\eta ,\phi)$ with Eq.~\eqref{eq:delta field} in Eq.~\eqref{eq:intermediate field c} yields:
 \begin{equation}
 \label{eq:intermediate field d}
 U(r ,\theta) = \frac{i}{\lambda} \frac{R_{\alpha}z}{\rho ^2}  \exp 
 						\left[ i\left( k\rho + \frac{k}{\rho}R_{\alpha}^2\right)\right]
-						\int _{0}^{2\pi}  e^{-i\frac{k}{\rho}R_{\alpha}r\cos (\theta - \phi)} d\theta
+						\int _{0}^{2\pi}  e^{-i\frac{k}{\rho}R_{\alpha}r\cos (\theta - \phi)} d\theta \quad .
 \end{equation}
 
 Equation~\eqref{eq:intermediate field d} can be computed
@@ -588,9 +538,9 @@ Rounding introduces mode artifacts that also reduce the
 propagation-invariant range \cite{brzobohaty08}.
 
 Another point to consider while choosing the optimum $z$
-is the rate of change of phase in plane $(r,\theta)$. For a 
+is the rate of change of phase in the $(r,\theta)$ plane. For a 
 constant $r=R_0$ the maximum phase 
-$\varphi _{\mathrm{max}}\propto \frac{1}{z^2}$, which
+$\varphi _{\mathrm{max}}$ scales as $\frac{1}{z^2}$, which
 limits the ability to encode a phase in a phase only SLM 
 with finite sized pixels.
 
@@ -610,8 +560,8 @@ with finite sized pixels.
 
 Figure.~\ref{fig:bessel quality} shows higher order Bessel
 beams created with a phase hologram computed from the 
-intermediate plane electric field at z=\SI{54}{\um}.
-The mode purity reduces as $m$ increases.
+intermediate plane electric field at $z=\SI{54}{\um}$.
+The mode purity decreases as $m$ increases.
 
 
 \section{Volumetric Imaging}
@@ -761,7 +711,7 @@ In addition to improving diffraction efficiency, shifting the
 hologram plane also can improve mode purity by moving the
 length scale for phase variations into the spatial bandwidth of a
 practical diffractive optical element.
-Both of these elements figure in the success of intermediate-plane
+Both of these considerations figure in the success of intermediate-plane
 holograms for projecting Bessel beams and their superpositions.
 Because Bessel beams are the natural basis for propagation-invariant
 modes, intermediate-plane holography lends itself naturally
