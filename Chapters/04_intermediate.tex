@@ -3,13 +3,13 @@
 
 \section{Tractor Beam: A Special Case of  Non-Diffracting Waves}
 
-The term ``Tractor beam'' was coined in 1931 by Dr. Edward Smith, a chemist moonlighting as a science fiction author [ADD REFERENCE]. The term was popularized into a science fiction by writers of ``Star Trek'' in the 1960's. In all of those imagined realizations, a tractor beam is projected by a space ship to capture and transport distant objects back to the ship. 
+The term ``Tractor beam'' was coined in 1931 by Dr. Edward Smith, a chemist moonlighting as a science fiction author \cite{lasbury_1970, nasa_paul}. The term was popularized into a science fiction by writers of ``Star Trek'' in the 1960's. In all of those imagined realizations, a tractor beam is projected by a space ship to capture and transport distant objects back to the ship. 
 Ashkin and his coworkers \cite{block1992} appropriated the term in referring to their discovery of optical tweezers. Unlike their sci-fi counterparts, however, optical tweezers only pull objects upstream over a limited range, typically less than one micrometer. Beyond this range, radiation dominates the intensity gradient trapping force and blows illuminated objects downstream. True tractor beams are a class of traveling waves that transport objects back to its source, opposite to the direction of propagation ideally along the entire length. Following Eq.~\eqref{eq:Electric Lorentz force} the force field of a mode of light needs to satisfy the condition:
 \begin{equation}
 \label{eq:Tractor Fz condition}
 \vec{F}_{z}\cdot \vec{\hat{z}} <0
 \end{equation}
-to be considered a tractor beam. In $2005 $ \v Ci\v zm\'ar \emph{et al.} \cite{cizmar2005} described optical conveyor belt which can transport micrometer scale objects bidirectionally over a distance of $\SI{250}{\um}$. Even though it has a long range of transport, this mode of light ``is based on a standing wave (SW) created from two counter-propagating nondiffracting beams where the phase of one of the beams can be changed'' \cite{cizmar2005}. Because the conveyor belt is not a travelling wave it is not a tractor beam by our definition. One sided tractor beams were experimentally demonstrated by Ruffner and Grier \cite{ruffner2012prl} in both cases by coherently superposing coaxial Bessel beams.
+to be considered a tractor beam. In $2005 $ \v Ci\v zm\'ar \emph{et al.} \cite{cizmar2005} described optical conveyor belt which can transport micrometer scale objects bidirectionally over a distance of $\SI{250}{\um}$. Even though it has a long range of transport, this mode of light ``is based on a standing wave (SW) created from two counter-propagating nondiffracting beams where the phase of one of the beams can be changed'' \cite{cizmar2005}. Because the conveyor belt is not a traveling wave it is not a tractor beam by our definition. One sided tractor beams were experimentally demonstrated by Ruffner and Grier \cite{ruffner2012prl} in both cases by coherently superposing coaxial Bessel beams.
 
 Because Bessel functions form a complete set of orthogonal basis functions which are solutions to the paraxial Helmholtz equation, any propagation-invariant or linear non-diffracting mode of light can be expressed as a linear superposition \cite{Ruffner:14, Lee:10, ruffner2012prl} of Bessel beams. In the force calculation for a single Bessel beam using Eq.~\eqref{eq:Electric Lorentz force} it is evident that the $\vec{z}$-component of $\vec{F_e}(\vec{r})$ satisfies the propagation invariance because
 \begin{equation}
@@ -30,7 +30,7 @@ where the amplitudes $a_1$ and $a_2$, convergence angles $\alpha$ and $\alpha ^{
 
 
 \subsection{Conveyor Beam}
-Following Eq.~\eqref{eq:two bessel superposition E}, an optical conveyor beam is a superposition of two $0$th order Bessel beams, $m=m^{\prime} = 0$. In this case the component Bessel beams differ only in that convergence angles, $\alpha$ and $\alpha ^{\prime}$. They then interfere to create a periodic amplitude profile along the axis of symmetry. If $a_1 = a_2 = 1$, the electric field along the axis ($\vec{r}=0$) is maximally modulated. The associated intensity profile
+Following Eq.~\eqref{eq:two bessel superposition E}, an optical conveyor beam is a superposition of two $0$-th order Bessel beams, $m=m^{\prime} = 0$. In this case the component Bessel beams differ only in that convergence angles, $\alpha$ and $\alpha ^{\prime}$. They then interfere to create a periodic amplitude profile along the axis of symmetry. If $a_1 = a_2 = 1$, the electric field along the axis ($\vec{r}=0$) is maximally modulated. The associated intensity profile
 \begin{equation}
 \label{eq:conveyor electric field axis}
 \vert E(z) \vert ^2 = 4 \cos ^2 \left( kz\frac{\cos \alpha - \cos \alpha ^{\prime}}{2}\right) \exp ^2 \left( ikz \frac{\cos \alpha + \cos \alpha ^{\prime}}{2}\right) \quad ,
@@ -54,13 +54,25 @@ Most common laser modes are bright along the axis and so broadly resemble cylind
 \label{eq:lee solenoid bessel sum}
 \vec{E}_{\gamma, l}(\vec{r},z) = \sum ^{[l]}_{m=[l-\gamma k]}\frac{l-m}{\gamma ^2}J_{m}(q_m R)e^{i\frac{l-m}{\gamma}z}e^{im\theta}J_{m}(q_m r) \quad ,
 \end{equation}
-where $\gamma$ is the pitch of the spiral intensity profile and $R$ is the radius. [XXXXXXX ADD FIG FROM LEE PAPER]
+where $\gamma$ is the pitch of the spiral intensity profile and $R$ is the radius. 
+
+
+\begin{figure}[t!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{lee_solenoid}
+  \caption{ (a) Calculated three-dimensional intensity distribution using Eq.~\eqref{eq:lee solenoid bessel sum} of a solenoid beam propagating in the $\hat{z}$ direction. (b) Volumetric rendering of the measured intensity in an experimental realization as presented in \cite{Lee:10}. Source: Reprinted with permission from \cite{Lee:10}.}
+  \label{fig:solenoid wavefronts}
+\end{figure}
+
+
 The spiraling intensity profile of a solenoid beam is discreetly propagation invariant mode of light along its axis of propagation, which can be written as:
 \begin{equation}
 \label{eq:discreet propagation invariant}
 I\left(\vec{r},\theta, z\right) = I\left(\vec{r},\theta, z+\vartriangle z\right) \quad ,
 \end{equation}
 but the radial intensity profile remains unchanged in the spiraling frame of reference \cite{Tervo01}. Figure.~\ref{fig:solenoid wavefronts} shows how the wavefronts update with changing helical pitch $l$ from Eq.~\eqref{eq:lee solenoid bessel sum}. For $l<0$ (e.g.~Fig.~\ref{fig:solenoid wavefronts}(c) where $l=-40$) the phase gradient force acts as a pulling force which moves trapped objects upstream.
+
+
 \begin{figure}[t!]
   \centering
   \includegraphics[width=0.8\textwidth]{lee2010opex}
@@ -426,8 +438,8 @@ in Eq.~\eqref{eq:extrafield} is small or negligible.
 
 \begin{figure}[t!]
   \centering
-  \includegraphics[width=\textwidth]{intermediate4sm}
-  \caption{[MAKE THE RIGHT IMAGE XXXXXXX] Schematic Intermediate-plane field calculation.}
+  \includegraphics[width=.75\textwidth]{iphcal}
+  \caption{Electric field at an intermediate plane is calculated using Rayleigh Sommerfeld propagator. This schematic shows relevant symbols used in the calculation to get Eq.~\eqref{eq:intermediatehologram}.}
   \label{fig:intermediate field schema}
 \end{figure}
 Following the schematic in Fig.~\ref{fig:intermediate field schema}, 
@@ -480,7 +492,7 @@ To produce a Bessel beam in the $(r,\theta)$ plane we need
 \label{eq:delta field}
 U(\eta , \phi) = \delta (\eta - R_{\alpha}) \quad ,
 \end{equation}
-where $R_{\alpha}$ is the radius of the infinitesimal ring similar to what is mentioned in Eq.~\eqref{eq:besselhologram}. Replacing $U(\eta ,\phi)$ with Eq.~\eqref{eq:delta field} in Eq.~\eqref{eq:intermediate field c} yields:
+where $R_{\alpha}$ is the radius of the infinitesimal ring similar to what is mentioned in Eq.~\eqref{eq:besselhologram}. Replacing $U(\eta ,\phi)$ with Eq.~\eqref{eq:delta field} in Eq.~\eqref{eq:intermediate field c} yields
 \begin{equation}
 \label{eq:intermediate field d}
 U(r ,\theta) = \frac{i}{\lambda} \frac{R_{\alpha}z}{\rho ^2}  \exp 
@@ -566,6 +578,13 @@ The mode purity decreases as $m$ increases.
 
 \section{Volumetric Imaging}
 
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=0.9\textwidth]{volimg}
+  \caption{A schematic for volumetric imaging technique. We create volumetric representations of the intensity distribution of the electric field transformed by SLM by translating the camera on a meter length motorized train, acquiring a stack of two-dimensional images with \SI{1}{\mm} precision in the process. A linear phase ramp is added in the SLM phase to displace the diffracted beam in order to prevent any interference between the zeroth order residual beam and the desired optical field.}
+  \label{fig:vol imaging schema}
+\end{figure*}
+
 Figure~\ref{fig:tractorbeams}(a) shows a volumetric
 rendering of a Bessel beam with $m = 0$ and
 $\alpha = \SI{3.9}{\milli\radian}$ created with
@@ -583,12 +602,11 @@ increments over a range of one meter.
 Each transverse slice has a transverse spatial resolution of \SI{8.64}{\um}.
 The transverse width of these beam's intensity maxima does not change
 appreciably over at least twice the plotted range.
-%Figure~\ref{fig:tractorbeams}
-%is limited to a range of one meter for clarity.
+
 
 \begin{figure*}[!t]
   \centering
-  \includegraphics[width=0.9\textwidth]{collimated}
+  \includegraphics[width=1\textwidth]{collimated}
   \caption{Propagation-invariant modes projected with intermediate-plane
     holograms.  (a) Bessel beam, $m = 0$, $\alpha = \SI{3.9}{\milli\radian}$.
     (b) Optical conveyor,
@@ -602,6 +620,7 @@ appreciably over at least twice the plotted range.
     $\alpha_2 = \SI{8.8}{\milli\radian}$.}
   \label{fig:tractorbeams}
 \end{figure*}
+
 
 Superpositions of Bessel beams can be obtained
 by superposing results of the form predicted
@@ -692,7 +711,7 @@ than conventional holographic mode-conversion techniques.
 
 In addition to projecting collimated modes, intermediate-plane
 holograms can project waves that converge or diverge at
-a specified rate.  This is achieved by deliberately mis-matching
+a specified rate.  This is achieved by deliberately mismatching
 the placement of the intermediate plane with the back focal
 plane of the converging element.  For intermediate-plane holograms
 with integrated converging phase profiles, this is achieved by
@@ -704,29 +723,16 @@ a different divergence angle.
 
 \section{Conclusion}
 
-Intermediate-plane holography is particularly useful for projecting
+We have introduced a new technique, Intermediate 
+Plane Holography which is particularly useful for projecting
 modes whose ideal Fresnel holograms are dominated by large
 amplitude variations, and so suffer from low diffraction efficiency.
-In addition to improving diffraction efficiency, shifting the
-hologram plane also can improve mode purity by moving the
-length scale for phase variations into the spatial bandwidth of a
-practical diffractive optical element.
-Both of these considerations figure in the success of intermediate-plane
-holograms for projecting Bessel beams and their superpositions.
-Because Bessel beams are the natural basis for propagation-invariant
-modes, intermediate-plane holography lends itself naturally
-to long-range projection.
-We have demonstrated meter-scale projection using centimeter-scale
-optical elements.
-These same elements have additional potential applications for
-topologically multiplexing and demultiplexing non-diffracting modes
-for optical communications \cite{gibson04,bozinovic13,willner15}.
-The same ability to project sophisticated superpositions of
-topological modes could have additional applications to remote
-sensing and LIDAR \cite{cvijetic15}.
-Finally, the same principals discussed here in the context of
-optical holography should apply equally well to other types
-of waves, most notably to acoustic waves.
+We have presented analytical solution for long range tractor beam
+and experimentally demonstrated improved  diffraction efficiency
+and better mode purity. We have demonstrated meter-scale 
+projection using centimeter-scale optical elements. 
+
+
 
 
 \section{Acknowledgment}
